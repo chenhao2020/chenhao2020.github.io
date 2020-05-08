@@ -35,9 +35,8 @@ steps:
     git config --global user.name "chenhao2020";
     git config --global user.email "1242937438@qq.com";
     git add .;
-    git commit -a -m "Update docs";
+    git commit -m "initial commit";
     git config -l;
-    ls -a;
     git push upstream master --force
 
   displayName: 'Deploying...'
