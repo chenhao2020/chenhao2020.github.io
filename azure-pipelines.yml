@@ -20,8 +20,10 @@ steps:
 
 # 安装gitbook脚手架，
 - script: |
-    npm install gitbook-cli -g
-    gitbook build
+    npm install gitbook-cli -g;
+    gitbook build;
+    pwd;
+    ls-a;
   displayName: 'Installing dependencies...'
 
 # 托管仓库需要部署
