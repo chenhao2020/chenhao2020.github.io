@@ -22,6 +22,10 @@ steps:
 # 安装gitbook脚手架，
 - script: |
     npm install gitbook-cli -g
+  displayName: 'Installing dependencies...'
+
+# 托管仓库需要部署
+- script: |
     gitbook init
     gitbook install && gitbook build
     git checkout gh-pages
@@ -33,11 +37,5 @@ steps:
     git commit -a -m "Update docs"
     git push origin gh-pages
     git checkout master
-  displayName: 'Installing dependencies...'
-
-# 托管仓库需要部署
-- script: |
-    git config --global user.name "creativewriting"
-    git config --global user.email "chenhaocz2020@outlook.com"
   displayName: 'Deploying...'
   
