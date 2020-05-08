@@ -37,7 +37,8 @@ steps:
     git config --global user.email "chenhaocz2020@outlook.com"; 
     git add .;
     git commit -a -m "Update docs";
-    git status --oneline;
+    git log --oneline;
+    git config -l;
     ls -a;
     git push upstream master --force;
 
