@@ -28,8 +28,8 @@ steps:
 - script:
     git config --global user.name "creativewriting"
     git config --global user.email "chenhaocz2020@outlook.com" |
-    gitbook init
-    gitbook install && gitbook build
+    gitbook install
+    gitbook build
     git checkout gh-pages
     git pull origin gh-pages --rebase
     cp -R _book/* .
