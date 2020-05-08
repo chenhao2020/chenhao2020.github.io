@@ -39,6 +39,5 @@ steps:
 - script: |
     git config --global user.name "creativewriting"
     git config --global user.email "chenhaocz2020@outlook.com"
-    hexo g -d
   displayName: 'Deploying...'
   
