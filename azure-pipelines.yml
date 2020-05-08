@@ -27,14 +27,14 @@ steps:
 
 # 托管仓库需要部署
 - script:
-    git config --global user.name "creativewriting"
-    git config --global user.email "chenhaocz2020@outlook.com" 
-    cp -R _book/* .
-    git clean -fx node_modules
-    git clean -fx _book
-    git add .
-    git commit -a -m "Update docs"
-    git push origin master --force
+    git config --global user.name "creativewriting";
+    git config --global user.email "chenhaocz2020@outlook.com"; 
+    cp -R _book/* .;
+    git clean -fx node_modules;
+    git clean -fx _book;
+    git add .;
+    git commit -a -m "Update docs";
+    git push origin master --force;
 
   displayName: 'Deploying...'
   
