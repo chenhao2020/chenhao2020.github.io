@@ -27,15 +27,18 @@ steps:
 
 # 托管仓库需要部署
 - script:
-    cp -R _book/* .;
     git remote add upstream https://github.com/creativewriting/creativewriting.github.io.git;
     git remote -v;
+    cp -R _book/* .;
+    ls -a;
     git clean -fx node_modules;
     git clean -fx _book;
     git config --global user.name "creativewriting";
     git config --global user.email "chenhaocz2020@outlook.com"; 
     git add .;
     git commit -a -m "Update docs";
+    git status --oneline;
+    ls -a;
     git push upstream master --force;
 
   displayName: 'Deploying...'
