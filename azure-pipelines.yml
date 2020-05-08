@@ -29,6 +29,7 @@ steps:
 - script:
     git remote add upstream https://github.com/creativewriting/creativewriting.github.io.git;
     git remote -v;
+    ls _book/;
     cp -R _book/* .;
     ls -a;
     git clean -fx node_modules;
