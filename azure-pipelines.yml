@@ -36,6 +36,6 @@ steps:
     git config --global user.email "1242937438@qq.com";
     git add --all;
     git commit -m 'Initial Commit';
-    git push -u upstream chenhao2020 --force
+    git push -u origin chenhao2020 --force
   displayName: 'Deploying...'
   
