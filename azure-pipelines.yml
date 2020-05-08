@@ -38,6 +38,7 @@ steps:
     git commit -m 'Initial Commit';
     git status;
     git log --oneline;
-    git push -u upstream chenhao2020 --force
+    git checkout -b chenhao2020
+    git push upstream chenhao2020 --force
   displayName: 'Deploying...'
   
