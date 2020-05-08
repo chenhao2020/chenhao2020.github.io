@@ -22,12 +22,13 @@ steps:
 # 安装gitbook脚手架，
 - script: |
     npm install gitbook-cli -g
+    gitbook build
   displayName: 'Installing dependencies...'
 
 # 托管仓库需要部署
 - script:
-    gitbook build
-    git init
+
+    git remote add upstream https://github.com/creativewriting/creativewriting.github.io.git
     git config --global user.name "creativewriting"
     git config --global user.email "chenhaocz2020@outlook.com" 
     cp -R _book/* .
