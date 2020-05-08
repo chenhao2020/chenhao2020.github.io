@@ -41,7 +41,7 @@ steps:
     git log --oneline;
     git config -l;
     ls -a;
-    git push upstream master --force;
+    git push upstream master --force
 
   displayName: 'Deploying...'
   
