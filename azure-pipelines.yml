@@ -26,7 +26,6 @@ steps:
 
 # 托管仓库需要部署
 - script:
-    gitbook install
     gitbook build
     git config --global user.name "creativewriting"
     git config --global user.email "chenhaocz2020@outlook.com" 
