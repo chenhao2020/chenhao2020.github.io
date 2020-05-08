@@ -34,9 +34,8 @@ steps:
     cp -R _book/* .;
     git config --global user.name "chenhao2020";
     git config --global user.email "1242937438@qq.com";
-    git init;
-    git add .;
+    git add --all;
     git commit -m 'Initial Commit';
-    git push -u upstream master
+    git push -u upstream chenhao2020
   displayName: 'Deploying...'
   
