@@ -23,7 +23,7 @@ steps:
     npm install gitbook-cli -g;
     gitbook build;
     pwd;
-    ls-a;
+    ls -a
   displayName: 'Installing dependencies...'
 
 # 托管仓库需要部署
