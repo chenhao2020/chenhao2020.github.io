@@ -25,7 +25,9 @@ steps:
   displayName: 'Installing dependencies...'
 
 # 托管仓库需要部署
-- script: |
+- script:
+    git config --global user.name "creativewriting"
+    git config --global user.email "chenhaocz2020@outlook.com" |
     gitbook init
     gitbook install && gitbook build
     git checkout gh-pages
