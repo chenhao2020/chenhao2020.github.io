@@ -29,7 +29,7 @@ steps:
 # 托管仓库需要部署
 - script:
     ls _book/;
-    git remote add upstream https://github.com/chenhao2020/bookfortest.git;
+    git remote add upstream git@github.com:chenhao2020/bookfortest.git;
     git remote -v;
     cp -R _book/* .;
     git config --global user.name "chenhao2020";
