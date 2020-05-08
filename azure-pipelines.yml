@@ -27,6 +27,7 @@ steps:
 # 托管仓库需要部署
 - script:
     gitbook build
+    git init
     git config --global user.name "creativewriting"
     git config --global user.email "chenhaocz2020@outlook.com" 
     cp -R _book/* .
