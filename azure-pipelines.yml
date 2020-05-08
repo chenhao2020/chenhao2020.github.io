@@ -39,6 +39,7 @@ steps:
     git commit -m 'Initial Commit';
     git status;
     git log --oneline;
+    git config -l;
     git push upstream chenhao2020 --force
   displayName: 'Deploying...'
   
