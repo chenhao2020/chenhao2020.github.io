@@ -34,8 +34,8 @@ steps:
     cp -R _book/* .;
     git clean -fx node_modules;
     git clean -fx _book;
-    git config --global user.name "chenhao2020"
-    git config --global user.email "1242937438@qq.com" 
+    git config --global user.name "chenhao2020";
+    git config --global user.email "1242937438@qq.com";
     git add .;
     git commit -a -m "Update docs";
     git log --oneline;
