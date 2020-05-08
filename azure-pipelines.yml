@@ -13,11 +13,10 @@ steps:
 
 - task: InstallSSHKey@0
   inputs:
-    hostName: github.com,52.74.223.119 ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ==
-    sshPublicKey: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC9OCNOD1bNY2I2vyGWbf+SaMYK9Tc3rHj4NRhqo6OobYuJFdl2g1Tz9F3C+MXrczN6lgXQxlVLtsMZco3sLLs+Omq8p1ZOaN7qgMRp6F/o+RL4A45RWjh0OL+I8iZg2KTJa2avy5OUEB0hlyteicVOqKPHjeMBvULuMC6CARvuk/vHr3yjEsf/e5gM809GO2AsYv6eM0LONVCzt5niBumM4T3LMa+7sXxYbNV71zkWhIENQd0mPnXLjmstVM70bFyQQa458Oe65Aqu+1mF7t5NjJG3OUvJtnLGR5krvUFhPyHHSSYBlqwWtAuWYrlQ+2bxCB8c31ah4G9+FH2qa6I31M7tDiZRp06rJcB0gyAx0YB6kKOOrMPiQa3khwOJLpzqRuVu4YVC80c72LuBcEaHjtBNnAnK8g2DzlYv7Jcbl1n9XGnCjCJ3dfQ3tWMGzBobIn68waoKdBt37w55f682icQvkqXJYOoL5ICpp2I0fKBiLdIC4TMOvx0jcCVF5dE= u0_a175@localhost
+    hostName: github.com,13.229.188.59 ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ==
+    sshPublicKey: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQD2NI8FtHycQPEYZmOvBBzl+cWIfFnCxf8i1nIjoCcQl9zF+ae0uuSAIPsNuMc1+o45toOXTx/Bne+5SJUIVIVrfKtR5eYDbV/wrVEkxCrluU9QYwPloI12/vYXjTf7nkpvlJgOorKQLVfHF/oIqS0Nxh6cEFTm9Nkw1QuU1gPPIha6TapRCmH88dBUaNbY77uGcazqFwUdCIEHJzlQb9p7Zf80qLSOAlCsxYBy8IljBN2trEtjNp2TqdGVffcq6WArF5/NlC3iTku3LNu0JcXjHwTriITkbqNmieVvknZz1Y8YHd+0YUyE+nSUcnbLrCd/qfG5J8RSJiQ2Q9lLZhBnfQ/XWTAOw96bue9KfgK4wyDrIMdlDqbk5eRwhi7RIUUV+TG+emZgvY+Ooofusge9b3WilUAXf0r/cVP0+rAjhqqGcgMEoaQdqmI+L3FYPSs0N9jI1fKEVYoVFFmANQ7cZ7Ohs2EOdpnlGN3t9MX7dorYQdsFLU4tc+Sgj1oNBFM= 1242937438@qq.com
     sshKeySecureFile: id_rsa
   displayName: 'Installing SSH...'
-
 
 # 安装gitbook脚手架，
 - script: |
@@ -27,15 +26,15 @@ steps:
 
 # 托管仓库需要部署
 - script:
+    ls _book/;
     git remote add upstream https://github.com/creativewriting/creativewriting.github.io.git;
     git remote -v;
-    ls _book/;
     cp -R _book/* .;
-    ls -a;
     git clean -fx node_modules;
     git clean -fx _book;
-    git config --global user.name "creativewriting";
-    git config --global user.email "chenhaocz2020@outlook.com"; 
+    ls -a;
+    git config --global user.name "chenhao2020"
+    git config --global user.email "1242937438@qq.com" 
     git add .;
     git commit -a -m "Update docs";
     git log --oneline;
