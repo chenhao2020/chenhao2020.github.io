@@ -38,7 +38,6 @@ steps:
     git commit -m 'Initial Commit';
     git status;
     git log --oneline;
-    git branch --set-upstream-to upstream/master
     git push -u upstream chenhao2020 --force
   displayName: 'Deploying...'
   
