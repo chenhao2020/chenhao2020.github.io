@@ -34,11 +34,11 @@ steps:
     cp -R _book/* .;
     git config --global user.name "chenhao2020";
     git config --global user.email "1242937438@qq.com";
+    git checkout -b chenhao2020;
     git add .;
     git commit -m 'Initial Commit';
     git status;
     git log --oneline;
-    git checkout -b chenhao2020
     git push upstream chenhao2020 --force
   displayName: 'Deploying...'
   
