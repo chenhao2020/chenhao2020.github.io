@@ -19,17 +19,14 @@ steps:
   displayName: 'Installing SSH...'
 
 
-# 安装Hexo脚手架，Hexo依赖
+# 安装gitbook脚手架，
 - script: |
-    npm install -g hexo-cli
-    npm install --save hexo-blog-encrypt
-    npm install --save hexo-helper-live2d
-    npm install --save live2d-widget-model-tororo
-    npm install --save bulma-stylus@0.8.0 hexo-component-inferno@^0.2.4 hexo-renderer-inferno@^0.1.3 inferno@^7.3.3 inferno-create-element@^7.3.3
+    npm install gitbook-cli -g
+    
     npm install
   displayName: 'Installing dependencies...'
 
-# 这里由于我有两个page托管仓库需要部署
+# 托管仓库需要部署
 - script: |
     git config --global user.name "creativewriting"
     git config --global user.email "chenhaocz2020@outlook.com"
