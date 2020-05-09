@@ -21,27 +21,21 @@ steps:
 # 安装gitbook脚手架，
 - script: |
     npm install gitbook-cli -g;
-    gitbook build;
-    pwd;
-    ls -a
+    gitbook build
   displayName: 'Installing dependencies...'
 
 # 托管仓库需要部署
 - script:
-    ls _book/;
     git remote add upstream git@github.com:chenhao2020/bookfortest.git;
-    git remote -v;
     cp -R _book/* .;
-    rm  -rf node_modules;
-    rm  -rf _book;
+    rm -rf node_modules;
+    rm -rf _book;
+    rm -rf azure-pipelines.yml;
     git config --global user.name "chenhao2020";
     git config --global user.email "1242937438@qq.com";
     git checkout -b gh-pages;
     git add .;
     git commit -m 'Update docs';
-    git status;
-    git log --oneline;
-    git config -l;
     git push upstream gh-pages --force
   displayName: 'Deploying...'
   
