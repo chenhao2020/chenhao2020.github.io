@@ -43,14 +43,14 @@
         "sharing": {
             "douban": false,
             "facebook": false,
-            "google": true,
+            "google": false,
             "pocket": false,
             "qq": false,
             "qzone": true,
             "twitter": false,
             "weibo": true,
          "all": [
-              "douban", "facebook", "google", "instapaper", "linkedin","twitter", "weibo", 
+              "douban", "facebook", "instapaper", "linkedin","twitter", "weibo", 
               "messenger","qq", "qzone","viber","whatsapp"
           ]
       }
