@@ -1,7 +1,7 @@
 {
-    "title": "GitBook-Demo",
-    "description": "GitBook-Demo",
-    "author": "chenhao2020",
+    "title": "如何撰写第一部小说",
+    "description": "本书教我们如何写第一小说",
+    "author": "陈昊 译",
     "language": "zh-hans",
     "root": ".",
     "plugins": [
@@ -19,14 +19,14 @@
             "wechatText": "微信打赏"
         },
         "github-buttons": {
-            "repo": "jartto/gitbook",
+            "repo": "chenhao2020/bookfortest",
             "types": [
                 "star"
             ],
             "size": "small"
         },
         "edit-link": {
-            "base": "https://github.com//gitbook/master",
+            "base": "https://github.com/chenhao2020/bookfortest",
             "label": "Edit This Page"
         }
     }
