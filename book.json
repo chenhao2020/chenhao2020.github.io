@@ -17,13 +17,17 @@
         "epub": "styles/epub.css"
     },
     "plugins": [
+        "splitter",
         "donate",
         "edit-link",
         "back-to-top-button",
         "expandable-chapters-small",
         "-lunr", 
         "-sharing",
+        "-search", 
+        "search-plus",
         "sharing-plus",
+        "tbfed-pagefooter@^0.0.1",
         "alerts"
     ],
     "pluginsConfig": {
@@ -36,8 +40,14 @@
             "wechatText": "微信打赏"
         },
         "edit-link": {
-            "base": "https://github.com/chenhao2020/bookfortest",
+            "base": "https://github.com/chenhao2020/bookfortest/edit/gh-pages/",
             "label": "Edit This Page"
+        },
+        "expandable-chapters-small":{},
+        "tbfed-pagefooter": {
+            "copyright": "Copyright © creativewriting.cn 2020",
+            "modify_label": "Updated:",
+            "modify_format": "2020-05-09 04:59:33"
         },
         "sharing": {
             "douban": false,
