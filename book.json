@@ -18,8 +18,13 @@
     },
     "plugins": [
         "donate",
-        "github-buttons@2.1.0",
-        "edit-link"
+        "edit-link",
+        "back-to-top-button",
+        "expandable-chapters-small",
+        "-lunr", 
+        "-sharing",
+        "sharing-plus",
+        "alerts"
     ],
     "pluginsConfig": {
         "donate": {
@@ -30,16 +35,23 @@
             "alipayText": "支付宝打赏",
             "wechatText": "微信打赏"
         },
-        "github-buttons": {
-            "repo": "chenhao2020/bookfortest",
-            "types": [
-                "star"
-            ],
-            "size": "small"
-        },
         "edit-link": {
             "base": "https://github.com/chenhao2020/bookfortest",
             "label": "Edit This Page"
-        }
+        },
+        "sharing": {
+            "douban": false,
+            "facebook": false,
+            "google": true,
+            "pocket": false,
+            "qq": false,
+            "qzone": true,
+            "twitter": false,
+            "weibo": true,
+         "all": [
+              "douban", "facebook", "google", "instapaper", "linkedin","twitter", "weibo", 
+              "messenger","qq", "qzone","viber","whatsapp"
+          ]
+      }
     }
 }
