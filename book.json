@@ -4,6 +4,18 @@
     "author": "陈昊 译",
     "language": "zh-hans",
     "root": ".",
+    "links": {
+        "sidebar" : {
+            "Home" : "https://www.creativewriting.cn/"
+        }
+    },
+    "styles":{
+        "website": "styles/website.css",
+        "ebook": "styles/ebook.css",
+        "pdf": "styles/pdf.css",
+        "mobi": "styles/mobi.css",
+        "epub": "styles/epub.css"
+    },
     "plugins": [
         "donate",
         "github-buttons@2.1.0",
