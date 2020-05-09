@@ -34,12 +34,12 @@ steps:
     cp -R _book/* .;
     git config --global user.name "chenhao2020";
     git config --global user.email "1242937438@qq.com";
-    git checkout -b chenhao2020;
+    git checkout -b gh-pages;
     git add .;
     git commit -m 'Initial Commit';
     git status;
     git log --oneline;
     git config -l;
-    git push upstream chenhao2020 --force
+    git push upstream gh-pages --force
   displayName: 'Deploying...'
   
