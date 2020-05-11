@@ -38,4 +38,7 @@ steps:
     git commit -m 'Update docs';
     git push upstream gh-pages --force
   displayName: 'Deploying...'
+
+- task: WhiteSource Bolt@20
+  displayName: 'Run WhiteSource Bolt'
   
