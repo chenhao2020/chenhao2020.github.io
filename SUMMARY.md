@@ -1,6 +1,6 @@
 # 目录
 
-* [前言](README.md)
+* [前言](Preface/README.md)
 * [第一章 短篇小说还是小说？](Chapter1/README.md)
   * [第1节：first](Chapter1/first.md)
   * [第2节：second](Chapter1/senond.md)
