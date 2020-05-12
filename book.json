@@ -17,6 +17,7 @@
         "epub": "styles/epub.css"
     },
     "plugins": [
+        "yahei",
         "tbfed-pagefooter",
         "donate",
         "edit-link",
@@ -26,6 +27,10 @@
         "alerts"
     ],
     "pluginsConfig": {
+        "fontSettings": {
+                    "family": "msyh",
+                    "size": 2
+            },
         "tbfed-pagefooter": {
             "copyright": "Copyright &copy creativewriting.cn 2020",
             "modify_label": "该文件修订时间：",
@@ -41,7 +46,7 @@
         },
         "edit-link": {
             "base": "https://github.com/chenhao2020/bookfortest/edit/gh-pages/",
-            "label": "Edit This Page"
+            "label": "编辑本页"
         },
         "expandable-chapters-small":{},
         "sharing": {
