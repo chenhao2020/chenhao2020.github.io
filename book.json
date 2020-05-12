@@ -23,7 +23,6 @@
         "back-to-top-button",
         "expandable-chapters-small",
         "-lunr", "-sharing","-search",
-        "sharing-plus",
         "alerts"
     ],
     "pluginsConfig": {
