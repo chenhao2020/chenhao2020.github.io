@@ -17,6 +17,7 @@
         "epub": "styles/epub.css"
     },
     "plugins": [
+        "openwrite",
         "yahei",
         "tbfed-pagefooter",
         "donate",
@@ -27,6 +28,12 @@
         "alerts"
     ],
     "pluginsConfig": {
+        "openwrite":{
+            "blogId": "22130-1589358411406-636",
+            "name": "creativewriting",
+            "qrcode": "http://qiniu.creativewriting.cn/creativewriting.jpg",
+            "keyword": "vip"
+        },
         "fontSettings": {
                     "family": "msyh",
                     "size": 2

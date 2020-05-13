@@ -1,6 +1,6 @@
 # Summary
 
-* **[如何撰写第一部小说](README.md)**
+* [如何撰写第一部小说](README.md)
 
 * [前言](Preface/README.md)
   
