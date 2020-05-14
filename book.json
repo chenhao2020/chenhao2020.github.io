@@ -6,7 +6,7 @@
     "root": ".",
     "links": {
         "sidebar" : {
-            "Home" : "https://www.creativewriting.cn/"
+            "返回主页" : "https://www.creativewriting.cn/"
         }
     },
     "styles":{

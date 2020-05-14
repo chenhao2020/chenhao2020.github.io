@@ -1,4 +1,4 @@
-bui# Summary
+# Summary
 
 * [如何撰写第一部小说](README.md)
 
