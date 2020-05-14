@@ -17,6 +17,7 @@
         "epub": "styles/epub.css"
     },
     "plugins": [
+        "splitter",
         "openwrite",
         "yahei",
         "tbfed-pagefooter",

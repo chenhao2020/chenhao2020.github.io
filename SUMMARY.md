@@ -1,4 +1,4 @@
-# Summary
+bui# Summary
 
 * [如何撰写第一部小说](README.md)
 
@@ -8,7 +8,9 @@
 * [第二章 什么时候写？](Chapter2/README.md)
 * [第三章 从哪儿开始？](Chapter3/README.md)
   * [第一节 主题](Chapter3/themes.md)
-  * [第二节 故事想法](Chapter3/storyideas.md)
+  * [第二节 故事想法](Chapter3/)
+    * [第一小节 ](Section1/storyidea1.md)
+    * [第二小节 ](Section2/storyidea2.md)
   * [第三节 情节构思](Chapter3/plot.md)
   * [第四节 角色](Chapter3/juese.md)  
   * [第五节 场景](Chapter3/settings.md)
