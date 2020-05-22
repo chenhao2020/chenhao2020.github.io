@@ -8,8 +8,8 @@
 * [第二章 什么时候写？](Chapter2/README.md)
 * [第三章 从哪儿开始？](Chapter3/README.md)
   * 第一节 主题
-    * [第一小节 探讨书籍界一些最受欢迎的主题](Chapter3/Section1//themes.md)
-    * [第二小节 常见主题列表](Chapter3/Section1/storyidea1.md)
+    * [第一小节 探讨书籍界一些最受欢迎的主题](Chapter3/Section1/themes.md)
+    * [第二小节 常见主题列表](Chapter3/Section1/themelist.md)
   * 第二节 故事想法
     * [第一小节 故事想法的来源](Chapter3/Section2/storyidea1.md)
     * [第二小节 测试你的核心想法](Chapter3/Section2/storyidea2.md)
