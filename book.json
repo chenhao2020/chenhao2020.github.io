@@ -56,20 +56,6 @@
             "base": "https://github.com/chenhao2020/bookfortest/edit/gh-pages/",
             "label": "编辑本页"
         },
-        "expandable-chapters-small":{},
-        "sharing": {
-            "douban": false,
-            "facebook": false,
-            "google": false,
-            "pocket": false,
-            "qq": false,
-            "qzone": true,
-            "twitter": false,
-            "weibo": true,
-         "all": [
-              "douban", "facebook", "instapaper", "linkedin","twitter", "weibo", 
-              "messenger","qq", "qzone","viber","whatsapp"
-          ]
-      }
+        "expandable-chapters-small":{}
     }
 }
