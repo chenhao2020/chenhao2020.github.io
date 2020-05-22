@@ -11,7 +11,7 @@
     * [第一小节 探讨书籍界一些最受欢迎的主题](Chapter3/Section1//themes.md)
     * [第二小节 常见主题列表](Chapter3/Section1/storyidea1.md)
   * [第二节 故事想法](Chapter3/storyideas.md)
-    * [附录 常见主题列表 ](Chapter3/Section2/storyidea1.md)
+    * [第一小节 ](Chapter3/Section2/storyidea1.md)
     * [第二小节 ](Chapter3/Section2/storyidea2.md)
   * [第三节 情节构思](Chapter3/plots.md)
   * [第四节 角色](Chapter3/juese.md)  
