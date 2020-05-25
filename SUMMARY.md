@@ -13,6 +13,7 @@
   * [第二节 故事想法](Chapter3/Section2/README.md)
     * [第一小节 故事想法的来源](Chapter3/Section2/storyidea1.md)
     * [第二小节 测试你的核心想法](Chapter3/Section2/storyidea2.md)
+    * [第三小节 永恒主题的小说创意](Chapter3/Section2/storyidea3.md)
   * [第三节 情节构思](Chapter3/Section3/plot.md)
   * [第四节 角色](Chapter3/juese.md)  
   * [第五节 场景](Chapter3/settings.md)
