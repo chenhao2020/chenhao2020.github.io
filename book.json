@@ -1,7 +1,7 @@
 {
-    "title": "J",
-    "description": "本书教我们如何写第一小说",
-    "author": "陈昊 译",
+    "title": "机器人小车项目",
+    "description": "Todo：机器人小车项目",
+    "author": "陈昊 编辑 编译",
     "language": "zh-hans",
     "root": ".",
     "links": {
@@ -25,7 +25,7 @@
         "edit-link",
         "back-to-top-button",
         "expandable-chapters-small",
-        "-lunr", "-sharing","-search",
+        "-lunr", "-search",
         "alerts",
         "image-wrapper"
     ],
@@ -41,7 +41,7 @@
                     "size": 2
             },
         "tbfed-pagefooter": {
-            "copyright": "copyright &copy creativewriting.cn 2020",
+            "copyright": "Copyright &copy creativewriting.cn 2020",
             "modify_label": "文件修订时间：",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
         },
