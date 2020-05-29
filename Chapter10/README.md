@@ -1,5 +1,5 @@
 ---
-title: GPS MODULE RASPIGNSS项目一基站配置
+title: GPS MODULE 基站配置
 date: 2019-12-20 17:38:07
 tags: 机器人小车
 categories: 
@@ -8,21 +8,21 @@ categories:
 - 第二技能
 ---
 
-在上一篇文章中，介绍了如何安装RasPiGNSS模块。安装软件后，需要进行简短检查，以确保Raspberry Pi和RasPiGNSS GPS接收器总体正常运行。
+在上一篇文章中，介绍了如何安装RasPiGNSS模块的软件。安装软件后，需要进行检查，以确保Raspberry Pi和RasPiGNSS GPS接收器总体正常运行。
 
-本文介绍了如何配置用于差分GPS定位设置的基站。基站无论晴天和雨天都在户外运行。这就是为什么必须保护所有电子设备不受恶劣天气影响的原因。对所有电子组件使用防水/防水盒很重要。我自己制作一个防水盒。下一章介绍如何为RasPiGNSS GPS接收器构建自己的防水盒。
+本文介绍了如何配置基站，用于差分GPS定位。基站无论晴天和雨天都在户外运行。这就是为什么必须保护所有电子设备不受恶劣天气影响的原因。使用防水盒很重要。我自己制作一个防水盒
 
 #### 防水盒
 
-我买了一个饭盒作为基站盒。午餐盒非常便宜，仅售4,99欧元，并且足够大，可以在盒中存储Raspberry Pi，降压转换器，RasPiGNSS GPS接收器，移动电源和XBee Pro无线电模块。对于外部WIFI天线和GPS天线的连接器，我在包装盒中钻了两个孔并拧紧了连接器。我将Tallysman&trade;TW-2410 GPS天线的电缆通过电缆固定头插入，该电缆固定头的尺寸为M16，是标准IP68防水电缆固定头。电源电缆也从外部通过带有IP68等级的M12的电缆接头插入Raspberry Pi和RasPiGNSS模块的包装盒中。下图显示了包装盒，包装盒左侧和右侧分别带有两个天线和两个电缆固定头。
+我买了一个午餐盒作为基站盒。午餐盒非常便宜，仅售4,99欧元，并且足够大，可以在盒中存储Raspberry Pi，降压转换器，RasPiGNSS GPS接收器，移动电源和XBee Pro无线电模块。对于外部WIFI天线和GPS天线的连接器，我在包装盒中钻了两个孔并拧紧了连接器。我将Tallysman&trade;TW-2410 GPS天线的电缆通过电缆固定头插入，该电缆固定头的尺寸为M16，是标准IP68防水电缆固定头。电源电缆也从外部通过带有IP68等级的M12的电缆接头插入包装盒中的Raspberry Pi和RasPiGNSS模块的。下图显示了包装盒。包装盒左侧和右侧分别带有两个天线和两个电缆固定头。
 
 ![RasPiGNSS-户外箱](http://yuntu88.oss-cn-beijing.aliyuncs.com/fromlocal/1242937438@qq.com/20191224/DFeffGcjfd.jpg)
 
 #### 基站配置
 
-如前文所述，已经安装了基站需要运行的所有软件。您唯一需要配置的就是str2str服务,该服务将通过WIFI或XBee无线电模块接收到的GPS信号流进行转化。我将str2str服务用于这项工作，它已经是RTK库的一部分。
+如前文所述，已经安装了基站需要运行的所有软件。唯一需要配置的就是str2str服务,该服务将通过WIFI或XBee无线电模块接收到的GPS信号流进行转化。我将str2str服务用于这项工作，它已经是RTK库的一部分。
 
-您应该从www.drfasching.at下载名称为" rtkbase"的" rtkbase"脚本，该脚本是RPGTOOLS的一部分。该脚本是str2str服务的预配置文件，应该可以立即使用。该脚本通过TCP / IP或与XBee模块的串行连接来配置GPS数据传输。
+从www.drfasching.at下载名称为"rtkbase"的"rtkbase"脚本，该脚本是RPGTOOLS的一部分。该脚本是str2str服务的预配置文件，应该可以立即使用。该脚本通过TCP/IP或与XBee模块的串行连接来配置GPS数据传输。
 
 下载RTKBASE脚本：[downloads](http://drfasching.com/downloads.html#rpgtools)
 
@@ -30,11 +30,11 @@ categories:
 <!-- more -->
 #### RC.LOCAL配置
 
-必须将基站的RasPiGNSS模块设置为BINR模式才能接收原始GPS数据。要将RasPiGNSS模块设置为BINR模式以接收原始GPS数据，必须在每次重新启动Raspberry Pi后执行以下命令。
+必须将基站的RasPiGNSS模块设置为BINR模式才能接收原始GPS数据。要将RasPiGNSS模块设置为BINR模式以接收原始GPS数据，必须在每次重新启动Raspberry Pi后执行下面的命令。
 
-每次重新启动Raspberry Pi后，www.drfasching.at的帮助下我都会在将命令配置为启动过程。这使得RasPiGNSS模块的正确启动过程非常容易。每次重新启动后，必须配置RasPiGNSS模块，因为它没有内存来存储配置。重新启动后，它将始终处于默认的NMEA模式。
+每次重新启动Raspberry Pi后，都将命令配置。每次重新启动后，必须配置RasPiGNSS模块，因为它没有内存来存储配置。重新启动后，它将始终处于默认的NMEA模式。
 
-我在/etc/rc.local文件中将以root用户配置。此命令组合将RasPiGNSS模块设置为基站所需的操作模式，并从str2str服务的最后一条命令开始。要以root用户身份编辑rc.local，必须执行以下命令。
+我在/etc/rc.local文件中将以root用户配置。此命令将RasPiGNSS模块设置为基站所需的操作模式，并从str2str服务的最后一条命令开始。要以root用户身份编辑rc.local，必须执行以下命令。
 
 命令： `sudo nano /etc/rc.local`
 
@@ -50,15 +50,15 @@ categories:
 (/bin/sleep 11 && /usr/bin/rtkbase &)
 ```
 
-rc.local应如下图所示。保存更改后，请重新启动Raspberry Pi。
+如下图所示。保存更改后，请重新启动Raspberry Pi。
 
 ![RasPiGNSS rc-local](http://yuntu88.oss-cn-beijing.aliyuncs.com/fromlocal/1242937438@qq.com/20191224/tEG5tFkPYj.png)
 
-要检查RasPiGNSS模块现在是否以BINR模式工作，请执行以下命令并检查模块的通信速度。
+检查RasPiGNSS模块现在是否以BINR模式工作，请执行以下命令并检查模块的通信速度。
 
 命令： `stty -aF /dev/ttyAMA0`
 
-如下图所示，波特率是" 230400"，适用于BINR模式。现在我们知道该模块正在BINR模式下工作，因为NMEA模式的波特率较低，为" 115200"。
+如下图所示，波特率是" 230400"，适用于BINR模式。现在我们知道该模块正在BINR模式下工作，NMEA模式的波特率较低，为"115200"。
 
 ![RasPiGNSS模块-BINR模式](http://yuntu88.oss-cn-beijing.aliyuncs.com/fromlocal/1242937438@qq.com/20191224/2jeWCR5dwA.jpg)
 
@@ -72,11 +72,10 @@ rc.local应如下图所示。保存更改后，请重新启动Raspberry Pi。
 
 ![Basisstation终端-Skript rtkbase.txt](http://yuntu88.oss-cn-beijing.aliyuncs.com/fromlocal/1242937438@qq.com/20191224/aPAh5THpbJ.jpg)
 
-在下一章中，我将解释如何根据自己的需求配置str2str服务器。
 
 #### RTKBASE GPS原始数据流
 
-如果使用str2str服务通过TCP / IP流将原始GPS数据发送到移动单元，则必须更改rtkbase脚本的配置。您可以在以下文件夹" / usr / bin / rtkbase"中找到该脚本。您唯一需要做的就是让outformat以及messages配置空白，如下所示。
+如果使用str2str服务通过TCP/IP流将原始GPS数据发送到移动单元，则必须更改rtkbase脚本的配置。您可以在以下文件夹`/usr/bin/rtkbase`中找到该脚本。您唯一需要做的就是让outformat以及messages配置空白，如下所示。
 
 ```bash
 outformat=
@@ -88,7 +87,7 @@ rtkbase脚本现在应如下图所示。在该outformat 和messages均为空白�
 ![rtkbase配置原始数据流](http://yuntu88.oss-cn-beijing.aliyuncs.com/fromlocal/1242937438@qq.com/20191224/4Z6fwFdEaw.jpg)
 
 
-通过这两次更改，GPS原始数据将被发送到移动单元。根据所用无线电连接的带宽，原始数据流可能太大，您必须切换到使用较小带宽的RTCM3流。我将在下一章中解释RTCM3流的配置。
+通过这两次更改，GPS原始数据将被发送到移动单元。根据所用无线电连接的带宽，原始数据流可能太大，您必须切换到使用较小带宽的RTCM3流。
 
 #### RTKBASE GPS RTCM3流
 

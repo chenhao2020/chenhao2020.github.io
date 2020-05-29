@@ -1,5 +1,5 @@
 ---
-title: GPS MODULE RASPIGNSS项目一软件安装
+title: GPS MODULE 软件安装
 date: 2019-12-20 17:38:07
 tags: 机器人小车
 categories: 
@@ -8,23 +8,23 @@ categories:
 - 第二技能
 ---
 
-本章介绍了如何在Raspbian安装中安装哪种软件才能获得RasPiGNSS Aldebaran模块，该模块现在安装在Raspberry Pi上方。我将使用Raspbian作为操作系统。我正在使用Raspbian版本" 2016-09-23-raspbian-jessie.img "。根据我的经验，我建议这种解释将适用于旧版本以及较新版本的Raspbian。也许我们会在将来的Raspberry Pi SBC型号中看到一些操作系统上的差异。您将学习以下章节了解的Raspberry Pi模型之间的实际差异。
+本章介绍了如何在Raspbian中安装RasPiGNSS Aldebaran模块的软件，该模块硬件现在安装在Raspberry Pi上方。我将使用Raspbian作为操作系统。Raspbian版本是2016-09-23-raspbian-jessie.img。
 
 ![RasPiGNSS模块-软件设置](http://yuntu88.oss-cn-beijing.aliyuncs.com/fromlocal/1242937438@qq.com/20191223/N3njmTzj2M.jpg)
 
-#### RASPIGNSS软件安装：
+#### RASPIGNSS软件安装
 
-对于基站，我将使用Raspberry Pi 1 ModelB。RaspberryPi 1 Model B具有足够的CPU能力，可以用作基站。基站仅需接收GPS信号并将GPS信号的原始流或RTCM3流发送到移动站。移动站需要更多的CPU能力来计算精确的GPS位置。这就是为什么移动站配备Raspberry Pi 2 Model B的原因，它具有比Raspberry Pi 1 Model B更大的CPU能力。
+对于基站，我使用Raspberry Pi 1 ModelB。RaspberryPi 1 Model B具有足够的CPU能力，可以用作基站。基站仅需接收GPS信号并将GPS信号的原始流或RTCM3流发送到机器人小车的移动单元。移动单元需要更多的CPU能力来计算精确的GPS位置。这就是为什么移动站配备Raspberry Pi 2 Model B的原因，它具有比Raspberry Pi 1 Model B更大的CPU能力。
 <!-- more -->
 #### 在MICRO SD卡上安装RASPBIAN：
 
-首先，需要在micro-SD卡上安装Raspbian的最新版本。最新的图像可从Raspberry Pi官方主页上获得。
+首先，需要在micro-SD卡上安装Raspbian的最新版本，可从Raspberry Pi官方主页上获得。
 
-我决定使用完整版的Raspbian。但是我不会使用图形界面启动Raspbian。但是谁知道将来我是否需要图形界面。通常，以下"操作方法"与精简版的Raspbian配合使用。
+我决定使用完整版的Raspbian。但是我不使用图形界面启动Raspbian。将来或许需要图形界面。
 
 在micro-SD卡上安装Raspbian之后，应更新Raspbian支持包。
 
-要更新Raspbian，请登录并首先扩展文件系统，以获取可用的Micro SD卡的全部空间（扩展文件系统）。要扩展文件系统，配置费用非常有帮助。请通过终端窗口启动配置工具。启动配置工具的命令如下。
+要更新Raspbian，请登录并先扩展文件系统，以获取可用的Micro SD卡的全部空间（扩展文件系统）。要扩展文件系统，请通过终端窗口启动配置工具。启动配置工具的命令如下。
 
 ```bash
 sudo raspi-config
@@ -44,15 +44,15 @@ sudo apt-get install
 sudo rpi-update
 ````
 
-如果成功执行了所有命令，Raspbian安装将被更新，并且所有软件包的最新版本都将被安装。下一章说明如何设置RasPiGNSS模块。
+如果成功执行了所有命令，Raspbian安装将被更新，并且所有软件包的最新版本都将被安装。
 
 #### RASPIGNSS模块设置：
 
-对于RasPiGNSS模块的安装，我使用了来自www.drfasching.at的安装指南。对于以下步骤，您需要终端窗口。要打开终端窗口，您可以将Raspberry Pi插入显示器或通过PuTTY / SSH远程连接到Raspberry Pi。下一步适用于基站和移动单元。
+对于RasPiGNSS模块的安装，我使用了来自www.drfasching.at的安装指南。需要打开终端窗口，您可以将Raspberry Pi插入显示器或通过PuTTY / SSH远程连接到Raspberry Pi。下一步适用于基站和移动单元。
 
 **1. UART接口速度**
 
-您必须检查UART接口的时钟速率是否设置为6 MHZ。要检查此设置，请使用文本编辑器Nano打开/boot/config.txt文件。使用以下命令，您可以启动Nano并打开config.txt文件。
+您必须检查UART接口的时钟速率是否设置为6 MHZ。要检查此设置，请使用Nano打开/boot/config.txt文件。使用以下命令，您可以启动Nano并打开config.txt文件。
 
 ```bash
 sudo nano /boot/config.txt
@@ -66,10 +66,10 @@ sudo reboot
 
 **2. / dev / ttyAMA0的用法**
 
-现在，您必须检查Raspberry Pi是否未使用串行端口/ dev / ttyAMA0。您必须检查文件/boot/cmdline.txt和/ etc / inittab中的设置：
+现在，您必须检查Raspberry Pi是否未使用串行端口`/dev/ttyAMA0`。您必须检查文件`/boot/cmdline.txt`和`/etc/inittab`中的设置：
 
-/boot/cmdline.txt
-/ etc / inittab（此文件在我使用的Raspbian版本中不可用）
+`/boot/cmdline.txt`
+`/etc/inittab`（此文件在我使用的Raspbian版本中不可用）
 在两个文件中搜索以下条目。如果看到该条目，请删除该条目并保存更改。
 
 ```
@@ -78,7 +78,7 @@ console=serial0,115200
 ```
 **3. 文件/ ect / inittab丢失**
 
-如果从Raspbian安装时缺少/ ect / inittab文件，则必须执行以下两个命令。使用这两个命令，可以启动访问/ dev / ttyAMA0设备的getty进程。
+如果从Raspbian安装时缺少`/ect/inittab`文件，则必须执行以下两个命令。使用这两个命令，可以启动访问`/dev/ttyAMA0`设备的getty进程。
 
 ```bash
 sudo systemctl stop serial-getty@ttyAMA0.service
@@ -128,7 +128,7 @@ sudo dpkg -i <程序包名称.deb>
 ```
 7.安装lrzsz程序
 
-接下来，您必须安装lrzsz程序。Lrzsz是经过修饰的zmodem / ymodem / xmodem软件包，它是由Chuck Forsberg的rzsz软件包的公共领域版本构建的。这些程序使用纠错协议（{z，x，y} modem）通过拨入串行端口从各种程序下运行的各种程序发送（sz，sx，sb）和接收（rz，rx，rb）文件操作系统（来源：https://packages.debian.org/en/sid/lrzsz）。
+接下来，您必须安装lrzsz程序。Lrzsz是经过修饰的`zmodem / ymodem/xmodem`软件包，它是由Chuck Forsberg的rzsz软件包的公共领域版本构建的。这些程序使用纠错协议（{z，x，y} modem）通过拨入串行端口从各种程序下运行的各种程序发送（sz，sx，sb）和接收（rz，rx，rb）文件操作系统（来源：https://packages.debian.org/en/sid/lrzsz）。
 
 命令：   `sudo apt-get install lrzsz`
 
@@ -137,14 +137,14 @@ sudo dpkg -i <程序包名称.deb>
 下一步安装RasPiGNSS工具。rpgtools工具链接如下：
 http://drfasching.com/downloads#rpgtools
 
-请从网站以DEBIAN软件包的形式下载最新的rpgtools，并将文件保存在Raspberry Pi主目录中。我将rpgtools保存在以下目录/ home / pi / raspignss /中。
-add
+请从网站以DEBIAN软件包的形式下载最新的rpgtools，并将文件保存在Raspberry Pi主目录中。我将rpgtools保存在以下目录`/home/pi/raspignss/`中。
+
 使用以下命令将rpgtools安装在Raspbian为操作系统的Raspberry Pi上。
 
 ```bash
 sudo dpkg -i <程序包名称.deb>
 ```
-所有已安装的rpgtools文件都存储在目录/ usr / bin /中。
+所有已安装的rpgtools文件都存储在目录`/usr/bin/`下。
 
 **9. 安装用于Raspberry Pi的RTKLIB CUI工具**
 
@@ -169,7 +169,7 @@ nvsmode nmea
 nmeaparse
 ```
 
-程序nvsmode以及RPGTOOLS中的所有其他程序都存储在文件夹 / usr / bin中。
+程序nvsmode以及RPGTOOLS中的所有其他程序都存储在文件夹`/usr/bin`下。
 
 **发生错误时请注意**
 
@@ -182,14 +182,14 @@ nmeaparse
 ```bash
 sudo cpan -i Device::BCM2835
 ```
-如果一切正常，您现在应该在执行nvsmode nmea命令后在终端窗口中看到如下输出。
+如果一切正常，执行nvsmode nmea命令后在终端窗口中可以看到如下输出。
 
 ![RasPiGNSS模块-nmeaparse](http://yuntu88.oss-cn-beijing.aliyuncs.com/fromlocal/1242937438@qq.com/20191223/G6EekYP63P.jpg)
 
-####常见问题解答
+#### 常见问题解答
 
-www.drfasching.at网站的 [FAQ] (http://drfasching.com/products/gnss/faq.html)站点非常有帮助。
+www.drfasching.at网站的 [FAQ]非常有帮助。
 
-####总结
+#### 总结
 
-RasPiGNNS模块和软件的安装过程非常顺利。接收到的GPS坐标的第一个结果通过小程序nmeaparse显示在终端窗口中。现在，我必须研究基站的设置和RTK库的配置。在使用RTK库设置了基站和移动单元之后，我将构建下一个机器人，该机器人将使用这些设置进行导航。首先，我将克隆SD卡并保存图像。此镜像是基站和移动单元配置的起点。
+RasPiGNNS模块和软件的安装过程非常顺利。接收到的GPS坐标的第一个结果通过小程序nmeaparse显示在终端窗口中。现在，我必须研究基站的设置和RTK库的配置。在使用RTK库设置了基站和移动单元之后，我将构建下一个机器人，该机器人将使用这些设置进行导航。首先，我将克隆SD卡并保存镜像。此镜像是基站和移动单元配置的起点。

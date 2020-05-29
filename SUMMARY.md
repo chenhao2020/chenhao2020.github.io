@@ -11,11 +11,11 @@
 * [第五章 差分GPS](Chapter4/README.md)
 * [第六章 监视和防御系统](Chapter5/README.md)
 
-### 第二部分 GPS导航系统
+### 第二部分 GPS解决方案
 
-* [第六章 概述](Chapter6/README.md)
-* [第七章 理论设置](Chapter7/README.md) 
-* [第八章 GPS天线设置](Chapter8/README.md)
-* [第九章 软件安装](Chapter9/README.md)
-* [第十章 基站配置](Chapter10/README.md)
-* [第十一章 移动单元配置](Chapter11/README.md)
+* [第七章 概述](Chapter6/README.md)
+* [第八章 理论设置](Chapter7/README.md) 
+* [第九章 GPS天线设置](Chapter8/README.md)
+* [第十章 软件安装](Chapter9/README.md)
+* [第十一章 基站配置](Chapter10/README.md)
+* [第十二章 移动单元配置](Chapter11/README.md)
