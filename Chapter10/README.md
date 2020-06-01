@@ -91,7 +91,7 @@ rtkbase脚本现在应如下图所示。在该outformat 和messages均为空白�
 
 #### RTKBASE GPS RTCM3流
 
-如果要通过TCP / IP使用str2str服务将RTCM3 GPS数据流发送到移动单元，则必须更改rtkbase脚本的配置。您可以在以下文件夹" / usr / bin / rtkbase"中找到该脚本。您唯一要做的就是设置要发送的outformat =" RTCM3" 配置以及要发送的messages=" 1002、1004 等"，如下所示。
+如果要通过TCP/IP使用str2str服务将RTCM3 GPS数据流发送到移动单元，则必须更改rtkbase脚本的配置。您可以在以下文件夹`/usr/bin/rtkbase`中找到该脚本。您唯一要做的就是设置要发送的`outformat ="RTCM3"` `messages=" 1002,1004"` 等"，如下所示。
 
 outformat="rtcm3"
 messages="1002,1004,1006,1010,1013,1019,1020,1033,1107″
@@ -99,12 +99,13 @@ messages="1002,1004,1006,1010,1013,1019,1020,1033,1107″
 
 ![rtkbase配置RTCM3数据流](http://yuntu88.oss-cn-beijing.aliyuncs.com/fromlocal/1242937438@qq.com/20191224/askWMArwaz.jpg)
 
-#### RTKBASE TCP-IP或串行XBEE传输
+#### RTKBASE TCP/IP或XBee模块串行传输
 
-如果要通过TCP / IP发送GPS数据或通过XBee模块串行发送GPS数据，则必须在rtkbase脚本中配置传输类型。
+如果要通过TCP/IP发送GPS数据或通过XBee模块串行发送GPS数据，则必须在rtkbase脚本中配置传输类型。
 
-**TCP / IP配置**
-如果来自基站的GPS数据必须通过WIFI作为RTCM3流在本地网络中进行流传输，则" / usr / bin / rtkbase"配置文件必须进行如下更改。下一个清单显示了rtkbase的完整配置，以通过TCP / IP作为RTCM3流流传输GPS数据。
+**TCP/IP配置**
+如果来自基站的GPS数据必须通过WIFI作为RTCM3流在本地网络中进行流传输，则
+`/usr/bin/rtkbase`配置文件必须进行如下更改。下一个显示了rtkbase的完整配置。
 
 ```bash
 outtype="tcpsvr"
@@ -119,7 +120,7 @@ messages="1002,1004,1006,1010,1013,1019,1020,1033,1107"
 
 #### 串行XBee配置
 
-如果必须将来自基站的GPS数据作为RTCM3流通过XBee模块进行流处理，则必须按以下方式更改" / usr / bin / rtkbase"配置文件。下一个清单显示了rtkbase的完整配置，以通过串行XBee连接将GPS数据作为RTCM3流传输。
+如果必须将来自基站的GPS数据作为RTCM3流通过XBee模块进行流处理，则必须按以下方式更改`/usr/bin/rtkbase`配置文件。下图显示了rtkbase的完整配置，通过串行XBee将GPS数据作为RTCM3流传输。
 
 ```bash
 outtype="serial"
@@ -135,7 +136,7 @@ rtkbase配置串行xbee流
 
 #### RTKBASE GPS坐标配置
 
-您应该在" / usr / bin / rtkbase"中配置GPS坐标以及海拔高度  。该配置对于移动单元计算相对于基站的相对位置很重要。配置应如下图所示。
+您应该在`/usr/bin/rtkbase`中配置GPS坐标以及海拔高度  。该配置对于移动单元计算相对于基站的相对位置很重要。配置应如下图所示。
 
 ![Konfiguration – rtkbase](http://yuntu88.oss-cn-beijing.aliyuncs.com/fromlocal/1242937438@qq.com/20191224/iW6xbw2Wht.png)
 
@@ -147,7 +148,7 @@ rtkbase配置串行xbee流
 
 ![屏幕截图-RTK加GPS](http://yuntu88.oss-cn-beijing.aliyuncs.com/fromlocal/1242937438@qq.com/20191224/tNJwRDpcis.jpg)
 
-您也可以在PC上安装RTKNAVI程序，并仔细查看从基站接收到的GPS数据流。
+您也可以在PC上安装RTKNAVI程序，并查看从基站接收到的GPS数据流。
 
 Windows版RTKNAVI
 ![Windows版RTKNAVI](http://yuntu88.oss-cn-beijing.aliyuncs.com/fromlocal/1242937438@qq.com/20191224/R4Bjh6TkCQ.jpg)
@@ -156,4 +157,4 @@ Windows版RTKNAVI
 
 #### 总结
 
-在使用RTL库并熟悉库的配置之后，很容易设置基站和操作基站。为Raspberry Pi和所有其他电子组件找到便宜又防水的外壳并不容易。我使用了一个非常便宜的便当盒，并且很容易在饭盒上为电缆打孔。要安装和配置RTKLIB，我需要一天的时间。str2str服务器的配置非常复杂，但是我希望我的解释很容易理解。基站的设置工作良好且可靠，现在我可以设置移动单元，流动站和XBee连接了。
+在使用RTL库并熟悉库的配置之后，很容易设置基站和操作基站。为Raspberry Pi和所有其他电子组件找到便宜又防水的外壳并不容易。我使用了一个非常便宜的午餐盒，并且很容易在饭盒上为电缆打孔。要安装和配置RTKLIB，我需要一天的时间。str2str服务器的配置非常复杂，但是我希望我的解释很容易理解。基站的设置工作良好且可靠，现在我可以设置移动单元，流动站和XBee连接了。
