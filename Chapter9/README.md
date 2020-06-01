@@ -107,7 +107,7 @@ sudo dpkg -i <程序包名称.deb>
 # 注意有关BCM2835库的源代码：
 
 # 网站：airspayce.com
-# 作者：Mike McCauley
+# 我：Mike McCauley
 # 许可证：GPLv2
 
 ```
@@ -122,7 +122,7 @@ sudo dpkg -i <程序包名称.deb>
 #关于Perl BCM2835库的源的注释：
 
 # 网站：cpan.org
-# 作者：Mike McCauley
+# 我：Mike McCauley
 # 许可证：Perl艺术许可证
 # 注意：这是Debian Jessie版本（用于Perl 5.20.2）
 ```
@@ -156,7 +156,7 @@ sudo dpkg -i <程序包名称.deb>
 sudo dpkg -i <程序包名称.deb>
 #请注意有关RTK库的源代码：
 # 网站rtklib.com
-# 作者：高须友二
+# 我：高须友二
 # 许可证：BSD 2-clause
 ```
 现在已经安装了所有软件，以使RasPiGNSS模块与Raspberry Pi一起运行。

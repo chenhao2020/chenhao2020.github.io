@@ -7,7 +7,7 @@ categories:
 - 技能爱好
 - 第二技能
 ---
-机器人小车项目尚未结束。作者们已经安装了电子组件。该机器人的大脑是Raspberry Pi 2 ModelB。RaspberryPi连接到RasPiGNSS模块以接收原始GPS数据流。为了通过WIFI控制Big Rob，Raspberry Pi通过RJ45电缆连接到机身内置的Linksys路由器。但是作者将来会更改此设置，并将安装带有增强器和外部天线的USB wifi卡。机器人可以自主导航，并可以通过带有实时视频流的Web界面进行手动控制，以向操作员显示机器人看到的内容。
+机器人小车项目尚未结束。我们已经安装了电子组件。该机器人的大脑是Raspberry Pi 2 ModelB。RaspberryPi连接到RasPiGNSS模块以接收原始GPS数据流。为了通过WIFI控制Big Rob，Raspberry Pi通过RJ45电缆连接到机身内置的Linksys路由器。但是我将来会更改此设置，并将安装带有增强器和外部天线的USB wifi卡。机器人可以自主导航，并可以通过带有实时视频流的Web界面进行手动控制，以向操作员显示机器人看到的内容。
 
 下一张照片显示了Big Rob准备在野外执行任务的情况。在机器人的顶部，安装了Raspberry Pi Sense-HAT和GPS天线。机器人需要连接到RasPiGNSS模块的GPS天线，以进行精确差分的GPS导航。在此设置中，GPS所需的基站没有显示在图片上。但是Big Rob的Raspberry Pi是通过WIFI连接到基站的，RTK库已经使用机器人的GPS精确坐标计算出FIX解决方案。
 
@@ -17,7 +17,7 @@ Big Rob本身使用Linksys WRT54GL WIFI路由器，该路由器用作访问点�
 <!-- more -->
 #### 具有GNSS导航功能的RASPBERRY PI机器人
 
-自2016年11月以来，作者一直在为的机器人汽车开发GPS解决方案。RTK解决方案由基站和内置在机器人中的移动单元组成。如果您想了解有关GPS解决方案设置的更多信息，作者写了一篇有关使用RTK库的差分GPS解决方案的安装和使用的文章系列。
+自2016年11月以来，我一直在为的机器人汽车开发GPS解决方案。RTK解决方案由基站和内置在机器人中的移动单元组成。如果您想了解有关GPS解决方案设置的更多信息，我写了一篇有关使用RTK库的差分GPS解决方案的安装和使用的文章系列。
 
 链接：[Raspberry Pi和RTKLIB的GNSS-Positionierung MIT –Einführung](https://custom-build-robots.com/elektronik/praezise-gnss-positionierung-mit-dem-raspberry-pi-und-rtklib-einfuehrung/7921?lang=de)
 
@@ -26,15 +26,15 @@ Big Rob本身使用Linksys WRT54GL WIFI路由器，该路由器用作访问点�
 ![Raspberry Pi-Big Rob RasPiGNSS SenseHAT](http://yuntu88.oss-cn-beijing.aliyuncs.com/fromlocal/1242937438@qq.com/20191220/QfzmWCY3Em.jpg)
 
 
-在尾部，作者安装了Raspberry Pi Sense-HAT。需要Sense-HAT借助内置磁力计将机器人的前部转向北方。使用Sense-HAT内的陀螺仪，可以控制机器人必须向左或向右旋转多远才能面向北或要驶向的GPS航路点。
+在尾部，我安装了Raspberry Pi Sense-HAT。需要Sense-HAT借助内置磁力计将机器人的前部转向北方。使用Sense-HAT内的陀螺仪，可以控制机器人必须向左或向右旋转多远才能面向北或要驶向的GPS航路点。
 
 #### PYTHON模块化GPS NMEA数据集
 
-过去，作者使用USB GPS鼠标进行导航。GPSD守护程序和Python GPS模块支持大多数USB GPS模块。这种GPS鼠标的典型代表是NMEA流，可以从USB接收器所连接的USB接口读取该流。GPSD守护程序会读取此NEMA数据流，以在作者的Python程序中进行进一步处理。
+过去，我使用USB GPS鼠标进行导航。GPSD守护程序和Python GPS模块支持大多数USB GPS模块。这种GPS鼠标的典型代表是NMEA流，可以从USB接收器所连接的USB接口读取该流。GPSD守护程序会读取此NEMA数据流，以在我的Python程序中进行进一步处理。
 
-对于GPS RTK解决方案，作者更改了Python程序以从网络上的TCP / IP套接字而不是USB端口读取NMEA流。这使Python程序能够读取RTKRCV程序生成的非常精确的NMEA流。作者的机器人可以通过RTK解决方案以计算出的位置非常精确地导航。
+对于GPS RTK解决方案，我更改了Python程序以从网络上的TCP / IP套接字而不是USB端口读取NMEA流。这使Python程序能够读取RTKRCV程序生成的非常精确的NMEA流。我的机器人可以通过RTK解决方案以计算出的位置非常精确地导航。
 
-更改Python程序非常容易。可以从TCP / IP套接字直接通过网络读取新的NMEA流，并使用扩展名PYNMEA轻松地在Python程序中处理NMEA数据。使用PYNMEA，作者可以解释RTKRCV生成的NMEA流，并使用GPS信息来控制机器人。
+更改Python程序非常容易。可以从TCP / IP套接字直接通过网络读取新的NMEA流，并使用扩展名PYNMEA轻松地在Python程序中处理NMEA数据。使用PYNMEA，我可以解释RTKRCV生成的NMEA流，并使用GPS信息来控制机器人。
 
 ![Python读取RTK流](http://yuntu88.oss-cn-beijing.aliyuncs.com/fromlocal/1242937438@qq.com/20191220/meiS7aFKkA.jpg)
 
@@ -166,5 +166,5 @@ except:
 
 #### 总结：
 
-现在，作者对Python程序中的更改感到满意。作者已经使用精确GPS装置在野外测试了Big Rob。技术上的非常努力最终为的机器人获得一个非常精确的定位系统，那是值得的。花了一段时间才能自动启动并运行所有内容。但是就目前而言，RTK解决方案工作得很好，作者只需要给基站和移动单元加电即可获得非常精确的NMEA流进行导航。
+现在，我对Python程序中的更改感到满意。我已经使用精确GPS装置在野外测试了Big Rob。技术上的非常努力最终为的机器人获得一个非常精确的定位系统，那是值得的。花了一段时间才能自动启动并运行所有内容。但是就目前而言，RTK解决方案工作得很好，我只需要给基站和移动单元加电即可获得非常精确的NMEA流进行导航。
 
