@@ -19,3 +19,7 @@
 * [第十章 软件安装](Chapter9/README.md)
 * [第十一章 基站配置](Chapter10/README.md)
 * [第十二章 移动单元配置](Chapter11/README.md)
+
+### 第二部分 资源与参考
+
+* [参考 PCA9685的使用说明](Reference/README.md) 
