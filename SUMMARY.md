@@ -23,3 +23,5 @@
 ### 第二部分 资源与参考
 
 * [参考 PCA9685的使用说明](Reference/README.md) 
+* [参考 BTS7960的使用说明](Reference/README1.md) 
+* [资源](Resouces/README.md) 
