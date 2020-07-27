@@ -21,6 +21,7 @@ steps:
 # 安装gitbook脚手架，
 - script: |
     npm install hexo-cli -g;
+    npm install hexo-deployer-git --save
     npm install;
   displayName: 'Installing dependencies...'
 
