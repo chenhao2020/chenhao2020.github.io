@@ -26,11 +26,11 @@ steps:
 
 # 托管仓库需要部署
 - script:
-    git config --global user.name "chenhao2020"
-    git config --global user.email "1242937438@qq.com"
-    hexo clean
-    hexo g
-    hexo d
+    git config --global user.name "chenhao2020";
+    git config --global user.email "1242937438@qq.com";
+    hexo clean;
+    hexo g;
+    hexo d;
   displayName: 'Deploying...'
 
 # 安全测试
