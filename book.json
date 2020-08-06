@@ -1,7 +1,7 @@
 {
-    "title": "梅好的个人笔记",
+    "title": "陈昊的个人笔记",
     "description": "兵马未到，粮草先行",
-    "author": "梅好",
+    "author": "陈昊",
     "language": "zh-hans",
     "root": ".",
     "links": {
@@ -18,7 +18,6 @@
     },
     "plugins": [
         "splitter",
-        "openwrite",
         "yahei",
         "tbfed-pagefooter",
         "donate",
@@ -30,12 +29,6 @@
         "image-wrapper"
     ],
     "pluginsConfig": {
-        "openwrite":{
-            "blogId": "22130-1589358411406-636",
-            "name": "creativewriting",
-            "qrcode": "http://qiniu.creativewriting.cn/creativewriting.jpg",
-            "keyword": "vip"
-        },
         "fontSettings": {
                     "family": "msyh",
                     "size": 2
