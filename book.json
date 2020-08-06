@@ -54,7 +54,7 @@
             "wechatText": "微信打赏"
         },
         "edit-link": {
-            "base": "https://github.com/chenhao2020/bookfortest/edit/gh-pages/",
+            "base": "https://github.com/chenhao2020/blog/edit/gh-pages/",
             "label": "编辑本页"
         },
         "expandable-chapters-small":{}
