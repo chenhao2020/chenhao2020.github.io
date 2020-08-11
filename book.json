@@ -56,7 +56,8 @@
         "simple-mind-map": {
             "type": "markdown",
             "preset": "colorful",
-            "linkShape": "diagonal"
+            "linkShape": "diagonal",
+            "autoFit": true
         }        
     }
 }
