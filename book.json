@@ -1,5 +1,5 @@
 {
-    "title": "陈昊的个人笔记",
+    "title": "陈昊的KMS",
     "description": "兵马未到，粮草先行",
     "author": "陈昊",
     "language": "zh-hans",
@@ -27,6 +27,7 @@
         "-lunr", "sharing","-search",
         "alerts",
         "image-wrapper"
+        "simple-mind-map"
     ],
     "pluginsConfig": {
         "fontSettings": {
@@ -50,7 +51,12 @@
             "base": "https://github.com/chenhao2020/blog/edit/gh-pages/",
             "label": "编辑本页"
         },
-        "expandable-chapters-small":{}
-        
+        "expandable-chapters-small":{},
+
+        "simple-mind-map": {
+            "type": "markdown",
+            "preset": "colorful",
+            "linkShape": "diagonal"
+        }        
     }
 }
