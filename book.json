@@ -26,7 +26,7 @@
         "expandable-chapters-small",
         "-lunr", "sharing","-search",
         "alerts",
-        "image-wrapper"
+        "image-wrapper",
         "simple-mind-map"
     ],
     "pluginsConfig": {
