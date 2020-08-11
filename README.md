@@ -1,5 +1,5 @@
 
-{% simplemindmap %}
+{% simplemindmap style={"height":"800px"} %}
 ```markdown
 * simplemindmap
     * config book.json
