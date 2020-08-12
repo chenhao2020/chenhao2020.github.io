@@ -1,5 +1,4 @@
 
-{% simplemindmap style={"height":"750px"} %}
 ```markdown
 * 陈昊的KMS
     * 专业技能-小说/剧本
@@ -26,5 +25,38 @@
         * 代码学习
         * 硬件收集
 ```
-{% endsimplemindmap %}
 
+
+```mind:color,height=300,title=The mind map of PersonalWiki
+# PersonalWiki
+## Coder
+### Programming Languages
+#### JavaScript
+##### Framework
+###### Webpack
+###### React
+###### Vue
+###### ...
+##### JSDoc
+##### WebGL
+##### Advanced Developing Skills
+##### ...
+#### TypeScript
+#### HTML
+### Algorithm
+### Project Management
+## Designer
+### UI/UX Design around Front-end region
+### Creative Design Collections
+## Post
+### Posts around Back-end Developing
+### Posts around Front-end Developing
+### Posts around CV
+### Posts around Design
+## Translation
+### Main Translation Works
+## Q&A
+### Some skills of a specific problem or requirement
+### Some answers of common problems
+## Job
+```

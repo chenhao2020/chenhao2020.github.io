@@ -27,7 +27,7 @@
         "-lunr", "sharing","-search",
         "alerts",
         "image-wrapper",
-        "simple-mind-map"
+        "mind-maps"
     ],
     "pluginsConfig": {
         "fontSettings": {
