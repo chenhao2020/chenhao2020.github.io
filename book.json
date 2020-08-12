@@ -51,13 +51,6 @@
             "base": "https://github.com/chenhao2020/blog/edit/gh-pages/",
             "label": "编辑本页"
         },
-        "expandable-chapters-small":{},
-
-        "simple-mind-map": {
-            "type": "markdown",
-            "preset": "colorful",
-            "linkShape": "diagonal",
-            "autoFit": true
-        }        
+        "expandable-chapters-small":{}      
     }
 }
