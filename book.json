@@ -26,8 +26,7 @@
         "expandable-chapters-small",
         "-lunr", "sharing","-search",
         "alerts",
-        "image-wrapper",
-        "mind-maps"
+        "image-wrapper"
     ],
     "pluginsConfig": {
         "fontSettings": {
