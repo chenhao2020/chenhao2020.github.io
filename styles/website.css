@@ -14,4 +14,8 @@
 .header-nav{
     display:none;
 }
+.page-inner {
+    max-width: none;
+    /* padding: 20px 270px 40px 40px; */
+}
 }
