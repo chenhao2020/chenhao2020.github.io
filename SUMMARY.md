@@ -1,8 +1,8 @@
 # Summary
 
-* [Meta](meta/meta.md)
+* [Meta]
   * [Reference](meta/reference.md)
-* [Sharing](sharing/sharing.md)
+* [Sharing]
   * [Everything I know](sharing/everything-I-know.md)
   * [My Workflow](sharing/my-workflow.md)
   * [My GitHub](sharing/my-github.md)
@@ -10,30 +10,30 @@
   * [My Trello](sharing/my-trello.md)
   * [Tracking](sharing/tracking.md)
   * [Things](sharing/things.md)
-* [Ideas](ideas/ideas.md)
+* [Ideas]
   * [Learn Anything](ideas/learn-anything.md)
-* [Focusing](focusing/focusing.md)
+* [Focusing]
   * [Rules](focusing/rules.md)
   * [Goals](focusing/goals.md)
   * [Processes](focusing/processes.md)
   * [Habits](focusing/habits.md)
-* [Minimalism](minimalism/minimalism.md)
-* [Research](research/research.md)
+* [Minimalism]
+* [Research]
   * [Solving problems](research/solving-problems.md)
   * [Asking questions](research/asking-questions.md)
   * [Staying on top of things](research/staying-on-top-of-things.md)
   * [Blogs](research/blogs.md)
-* [Knowledge](knowledge/knowledge.md)
+* [Knowledge]
   * [Knowledge graphs](knowledge/knowledge-graphs.md)
   * [Knowledge extraction](knowledge/knowledge-extraction.md)
   * [Mental models](knowledge/mental-models.md)
-* [Environment](environment/environment.md)
+* [Environment]
   * [Zero waste](environment/zero-waste.md)
   * [Veganism](environment/veganism.md)
   * [Renewable energy](environment/renewable-energy/renewable-energy.md)
     * [Nuclear energy](environment/renewable-energy/nuclear-energy.md)
     * [Batteries](environment/renewable-energy/batteries.md)
-* [Music](music/music.md)
+* [Music]
   * [Music playlists](music/music-playlists.md)
   * [Music artists](music/music-artists.md)
   * [Music albums](music/music-albums.md)
@@ -44,7 +44,7 @@
     * [Synthesizers](music/music-production/synthesizers.md)
     * [Guitar](music/music-production/guitar.md)
   * [Singing](music/singing.md)
-* [Life](life/life.md)
+* [Life]
   * [Happiness](life/happiness.md)
   * [Time](life/time.md)
   * [Memories](life/memories.md)
@@ -53,10 +53,10 @@
   * [Parenting](life/parenting.md)
   * [Success](life/success.md)
   * [Death](life/death.md)
-* [Writing](writing/writing.md)
+* [Writing]
   * [Writing prompts](writing/writing-prompts.md)
   * [Markdown](writing/markdown.md)
-* [macOS](macOS/macOS.md)
+* [macOS]
   * [macOS Apps](macOS/apps/macOS-apps.md)
     * [Alfred](macOS/apps/alfred/alfred.md)
       * [Making workflows](macOS/apps/alfred/making-workflows.md)
@@ -781,7 +781,7 @@
 * [Poems](poems/poems.md)
 * [Research papers](research-papers/research-papers.md)
   * [A view of mathematics](research-papers/a-view-of-mathematics.md)
-* [Books](books/books.md)
+* [Books]
   * [Go in action](books/go-in-action.md)
   * [AI: Modern Approach](books/ai-modern-approach.md)
   * [Mind for Numbers](books/mind-for-numbers.md)
@@ -796,7 +796,7 @@
   * [Eloquent ruby](books/eloquent-ruby.md)
   * [Surely you are joking Mr Feynman](books/surely-you-are-joking-mr-feynman.md)
   * [Thinking, fast and slow](books/thinking-fast-and-slow.md)
-* [Other](other/other.md)
+* [Other]
   * [Wiki workflow](other/wiki-workflow.md)
   * [My workflow notation](other/my-workflow-notation.md)
   * [Notes](other/notes.md)
@@ -809,9 +809,9 @@
   * [Used hotkeys](other/used-hotkeys.md)
   * [Mentions](other/mentions.md)
   * [Web presence](other/web-presence.md)
-* [Looking back](looking-back/looking-back.md)
-  * [2017](looking-back/2017/2017.md)
-  * [2018](looking-back/2018/2018.md)
+* [Looking back]
+  * [2017]
+  * [2018]
     * [2018 January](looking-back/2018/2018-january.md)
     * [2018 February](looking-back/2018/2018-february.md)
     * [2018 March](looking-back/2018/2018-march.md)
@@ -824,7 +824,7 @@
     * [2018 October](looking-back/2018/2018-october.md)
     * [2018 November](looking-back/2018/2018-november.md)
     * [2018 December](looking-back/2018/2018-december.md)
-  * [2019](looking-back/2019/2019.md)
+  * [2019]
     * [2019 January](looking-back/2019/2019-january.md)
     * [2019 February](looking-back/2019/2019-february.md)
     * [2019 March](looking-back/2019/2019-march.md)

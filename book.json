@@ -14,7 +14,6 @@
     "plugins": [
         "cuav-chapters",
         "chapter-fold",
-        "expandable-chapters",
         "splitter",
         "copy-code-button",
         "heading-anchors",
