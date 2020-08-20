@@ -55,9 +55,9 @@
         },
         "pluginsConfig": {
             "theme-fexa":{
-                "search-placeholder":"输入关键字搜索", //搜索框提示信息
-                "logo":"", //logo地址
-                "favicon": "" //ico地址
+                "search-placeholder":"输入关键字搜索",
+                "logo":"",
+                "favicon": ""
             }
         }     
     }
