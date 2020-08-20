@@ -15,12 +15,10 @@
         "cuav-chapters",
         "copy-code-button",
         "heading-anchors",
-        "yahei",
         "tbfed-pagefooter",
         "donate",
         "edit-link",
         "back-to-top-button",
-        "expandable-chapters-small",
         "-lunr", "-sharing","-search","-fontsettings",
         "alerts",
         "image-wrapper",
@@ -38,10 +36,6 @@
         }
     },
     "pluginsConfig": {
-        "fontSettings": {
-                    "family": "msyh",
-                    "size": 2
-            },
         "tbfed-pagefooter": {
             "copyright": "Copyright & copy creativewriting.cn 2020",
             "modify_label": "该文件修订时间：",
@@ -62,8 +56,8 @@
         "pluginsConfig": {
             "theme-fexa":{
                 "search-placeholder":"输入关键字搜索", //搜索框提示信息
-                "logo":"./logo.png", //logo地址
-                "favicon": "./favicon.ico" //ico地址
+                "logo":"", //logo地址
+                "favicon": "" //ico地址
             }
         }     
     }
