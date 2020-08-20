@@ -22,3 +22,12 @@
     display:none;
 }
 }
+
+
+/* PC */
+.header-inner .logo {
+    float: left;
+    height: 64px;
+    width: 64px;
+    background: url(./logo.png);
+}
