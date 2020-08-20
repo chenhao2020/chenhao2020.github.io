@@ -1,0 +1,8 @@
+@media screen and (max-device-width: 1000px) {
+.book-anchor-title {
+    display:none;
+}
+.page-footer {
+    display:none;
+}
+}
