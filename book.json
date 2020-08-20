@@ -32,7 +32,17 @@
                 {
                     "url":"https://www.creativewriting.cn/",
                     "target":"_blank",
-                    "name": "简易教程"
+                    "name": "创意写作"
+                }
+                {
+                    "url":"https://www.creativewriting.cn/wangpan",
+                    "target":"_blank",
+                    "name": "网盘资源"
+                }
+                {
+                    "url":"https://www.creativewriting.cn/daohang",
+                    "target":"_blank",
+                    "name": "网址导航"
                 }
             ]
         }
