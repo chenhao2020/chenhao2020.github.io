@@ -4,11 +4,6 @@
     "author": "陈昊",
     "language": "zh-hans",
     "root": ".",
-    "links": {
-        "sidebar" : {
-            "返回主页" : "https://www.creativewriting.cn/"
-        }
-    },
     "styles":{
         "website": "styles/website.css",
         "ebook": "styles/ebook.css",
@@ -17,17 +12,31 @@
         "epub": "styles/epub.css"
     },
     "plugins": [
-        "splitter",
+        "cuav-chapters",
+        "copy-code-button",
+        "heading-anchors",
         "yahei",
         "tbfed-pagefooter",
         "donate",
         "edit-link",
         "back-to-top-button",
         "expandable-chapters-small",
-        "-lunr", "sharing","-search",
+        "-lunr", "-sharing","-search","-fontsettings",
         "alerts",
-        "image-wrapper"
+        "image-wrapper",
+        "theme-fexa"
     ],
+    "variables": {
+        "themeFexa":{
+            "nav":[
+                {
+                    "url":"https://www.creativewriting.cn/",
+                    "target":"_blank",
+                    "name": "简易教程"
+                }
+            ]
+        },
+    },
     "pluginsConfig": {
         "fontSettings": {
                     "family": "msyh",
@@ -50,6 +59,12 @@
             "base": "https://github.com/chenhao2020/blog/edit/gh-pages/",
             "label": "编辑本页"
         },
-        "expandable-chapters-small":{}      
+        "pluginsConfig": {
+            "theme-fexa":{
+                "search-placeholder":"输入关键字搜索", //搜索框提示信息
+                "logo":"./logo.png", //logo地址
+                "favicon": "./favicon.ico" //ico地址
+            }
+        }     
     }
 }
