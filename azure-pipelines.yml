@@ -27,7 +27,7 @@ steps:
 
 # 托管仓库需要部署
 - script:
-    git remote add upstream git@github.com:chenhao2020/blog.git;
+    git remote add upstream git@github.com:chenhao2020/chenhao2020.github.io.git;
     cp -R _book/* .;
     rm -rf node_modules;
     rm -rf _book;
