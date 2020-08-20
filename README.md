@@ -2,5 +2,5 @@ PKM涉及使用流程和工具来收集，分类，存储，检索和共享符�
 
 下面的脑图是我的KMS总体框架，该框架将会随着时间的推移，在工作和生活中不断改进。这也是持续学习的意义所在。
 
-<iframe src="https://my.mindnode.com/Pgzxiz8jCyy8TynfCSDqzyDXMvxRsAsixEqTanoT/em#92,-79,-7" frameborder="0" marginheight="0" marginwidth="0" style="border: 1px solid rgb(204, 204, 204); width: 600px; height: 200px;" onmousewheel=""></iframe>
+<iframe src="https://my.mindnode.com/Pgzxiz8jCyy8TynfCSDqzyDXMvxRsAsixEqTanoT/em#92,-79,-7" frameborder="0" marginheight="0" marginwidth="0" style="border: 1px solid rgb(204, 204, 204); width: 100%; height: 200px;" onmousewheel=""></iframe>
 
