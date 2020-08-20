@@ -38,6 +38,7 @@
         }
     },
     "pluginsConfig": {
+        "chapter-fold":{},
         "tbfed-pagefooter": {
             "copyright": "Copyright & copy creativewriting.cn 2020",
             "modify_label": "该文件修订时间：",
@@ -55,12 +56,10 @@
             "base": "https://github.com/chenhao2020/chenhao2020.github.io/edit/gh-pages/",
             "label": "编辑本页"
         },
-        "pluginsConfig": {
-            "theme-fexa":{
-                "search-placeholder":"输入关键字搜索",
-                "logo":"",
-                "favicon": ""
-            }
-        }     
+        "theme-fexa":{
+            "search-placeholder":"输入关键字搜索",
+            "logo":"",
+            "favicon": ""
+        }   
     }
 }
