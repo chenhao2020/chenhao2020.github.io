@@ -13,6 +13,8 @@
     },
     "plugins": [
         "cuav-chapters",
+        "chapter-fold",
+        "splitter",
         "copy-code-button",
         "heading-anchors",
         "tbfed-pagefooter",
