@@ -5,4 +5,10 @@
 .page-footer {
     display:none;
 }
+#book-search-input{
+    display:none;
+}
+.gitbook-donate{
+    display:none;
+}
 }
