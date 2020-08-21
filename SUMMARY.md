@@ -1,21 +1,34 @@
 # Summary
 
 * [简介](README.md)
-## 入门教程
-* [markdown 入门教程](README.md)
-* [git 入门教程](README.md)
-    * [初识 git](README.md)
-        * [安装 git](README.md)
-        * [配置 git](README.md)
-    * [实战 git](README.md)
-        * [本地仓库](README.md)
-        * [版本管理](README.md)
-            * [分支总览](README.md)
-        * [里程碑式标签](README.md)
-    * [私人定制](README.md)
-        * [忽略文件](README.md)
-## 编程笔记
-* [java 学习笔记](README.md)
+
+## 知识体系
+
+* [定义](README.md)
+
+* [收集](README.md)
+    
+    * [优质信息](README.md)
+    
+    * [准确，完整](README.md)
+    
+    * [信息目的，有无偏见](README.md)
+    
+    * [有无有无被证实和确认](README.md)
+    
+    * [作者权威性专业，是否提供联系方式](README.md)
+    
+    * [归类](README.md)
+
+* [组织](README.md)
+
+    *  [实验，实践](README.md)
+    
+    *  [自定义，合成，提问，比较，验证](README.md)
+
+* [输出](README.md)
+
+## 编程学习
 
 * [智能小车](README.md)
 
@@ -26,6 +39,8 @@
   * [作品输出](README.md)
 
     * [小车](README.md)
+
+## 文艺创作
 
 * [长安历史](README.md)
 
