@@ -12,6 +12,7 @@
         "epub": "styles/epub.css"
     },
     "plugins": [
+        "chapter-fold",
         "splitter",
         "copy-code-button",
         "heading-anchors",
@@ -19,7 +20,7 @@
         "donate",
         "edit-link",
         "back-to-top-button",
-        "-sharing","-fontsettings",
+        "-sharing","-fontsettings","-theme-default",
         "alerts",
         "image-wrapper",
         "theme-fexa"
