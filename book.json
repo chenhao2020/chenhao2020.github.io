@@ -12,7 +12,6 @@
         "epub": "styles/epub.css"
     },
     "plugins": [
-        "chapter-fold",
         "splitter",
         "copy-code-button",
         "heading-anchors",
