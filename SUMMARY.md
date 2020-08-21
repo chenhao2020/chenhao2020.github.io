@@ -2,15 +2,15 @@
 
 * [简介](README.md)
 
-## 知识体系
+## PKM
 
 * [mindmap](pkm/mindmap.md)
 
-* [收集](shouji.md)
+* [收集](pkm/shouji.md)
 
-* [组织](zhengli.md)
+* [组织](pkm/zhengli.md)
 
-* [输出](output.md)
+* [输出](pkm/output.md)
 
 ## 编程学习
 
