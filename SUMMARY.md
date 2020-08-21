@@ -4,29 +4,13 @@
 
 ## 知识体系
 
-* [定义](README.md)
+* [mindmap](pkm/mindmap.md)
 
-* [收集](README.md)
-    
-    * [优质信息](README.md)
-    
-    * [准确，完整](README.md)
-    
-    * [信息目的，有无偏见](README.md)
-    
-    * [有无有无被证实和确认](README.md)
-    
-    * [作者权威性专业，是否提供联系方式](README.md)
-    
-    * [归类](README.md)
+* [收集](shouji.md)
 
-* [组织](README.md)
+* [组织](zhengli.md)
 
-    *  [实验，实践](README.md)
-    
-    *  [自定义，合成，提问，比较，验证](README.md)
-
-* [输出](README.md)
+* [输出](output.md)
 
 ## 编程学习
 
