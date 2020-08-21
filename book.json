@@ -1,7 +1,8 @@
 {
-    "title": "陈昊的KMS",
+    "title": "",
     "description": "兵马未到，粮草先行",
     "author": "陈昊",
+    "book-summary-title": "陈昊个人知识管理系统（PKMS）",
     "language": "zh-hans",
     "root": ".",
     "styles":{
