@@ -12,7 +12,6 @@
         "epub": "styles/epub.css"
     },
     "plugins": [
-        "cuav-chapters",
         "chapter-fold",
         "splitter",
         "copy-code-button",
