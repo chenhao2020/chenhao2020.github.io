@@ -26,6 +26,7 @@
 
 /* PC */
 .header-inner .logo {
+    width: 55px;
     background: url(images/logo.png);
     background-repeat: no-repeat;
 }

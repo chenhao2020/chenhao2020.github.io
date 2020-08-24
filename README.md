@@ -1,13 +1,3 @@
-### 什么是PKM
+下面是我的KMS脑图，该脑图使用MindNode制作，随着时间的推移，我会在工作和生活中不断改进。这也是持续学习的意义所在。
 
-PKM指的是个人知识管理（PERSONAL KNOWLEDGE MANAGEMENT），个人知识管理涉及到使用**流程和工具**来收集，分类，存储，检索和共享符合个人兴趣的知识。使用PKM可以帮助我们发现和探索自己的激情，平衡生活，设定目标，探索新想法，计划个人成长，学习新知识，解决问题，总体上提高创造力。
-
-### 为什么需要PKM
-
-当今社会，信息大爆炸，每时每刻都会有大量的信息出现在互联网上，这些信息冗余而且混乱，随着手机电脑的普及，大量充斥在我们的眼前。另外，由于互联网信息生产周期短，发布成本低，缺乏审阅，这就造成了信息质量相对较低。这时就需要使用流程和工具来处理这些信息。
-
-### 流程和工具
-
-网上的处理流程和工具多种多样，我的流程主要分为三步：收集-整理-输出。
-流程管理工具有：Onenote-MindNode-Notability-Hexo-Gitbook
-
+<iframe src="https://my.mindnode.com/Pgzxiz8jCyy8TynfCSDqzyDXMvxRsAsixEqTanoT/em#92,-79,-7" frameborder="0" marginheight="0" marginwidth="0" style="border: 1px solid rgb(204, 204, 204); width: 100%; height: 400px;" onmousewheel=""></iframe>
