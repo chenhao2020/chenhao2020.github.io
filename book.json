@@ -14,14 +14,10 @@
     "plugins": [
         "chapter-fold",
         "splitter",
-        "copy-code-button",
-        "heading-anchors",
         "tbfed-pagefooter",
         "donate",
         "edit-link",
-        "back-to-top-button",
         "-sharing","-fontsettings",
-        "alerts",
         "image-wrapper",
         "theme-fexa-black"
     ],
