@@ -34,6 +34,11 @@
                     "name": "创意写作"
                 },
                 {
+                    "url":"/robotcar/",
+                    "target":"_blank",
+                    "name": "机器人小车"
+                },
+                {
                     "url":"https://www.creativewriting.cn/wangpan",
                     "target":"_blank",
                     "name": "网盘资源"
