@@ -12,46 +12,20 @@
         "epub": "styles/epub.css"
     },
     "plugins": [
+        "insert-logo",
         "chapter-fold",
         "splitter",
         "tbfed-pagefooter",
         "donate",
         "edit-link",
         "-sharing","-fontsettings",
-        "image-wrapper",
-        "theme-fexa-black"
+        "image-wrapper"
     ],
-    "variables": {
-        "themeFexa":{
-            "showHome": true,
-            "showNavigator": true,     
-            "nav":[
-                {
-                    "url":"https://www.creativewriting.cn/",
-                    "target":"_blank",
-                    "name": "创意写作",
-                    "border": "nav-border",
-                    "type": "console" 
-                },
-                {
-                    "url":"/robotcar/",
-                    "target":"_blank",
-                    "name": "机器人小车"
-                },
-                {
-                    "url":"https://www.creativewriting.cn/wangpan",
-                    "target":"_blank",
-                    "name": "网盘资源"
-                },
-                {
-                    "url":"https://www.creativewriting.cn/daohang",
-                    "target":"_blank",
-                    "name": "网址导航"
-                }
-            ]
-        }
-    },
     "pluginsConfig": {
+        "insert-logo": {
+            "url": "images/logo.png",
+            "style": "background: none;"
+        },
         "chapter-fold":{},
         "tbfed-pagefooter": {
             "copyright": "Copyright & copy creativewriting.cn 2020",
@@ -69,11 +43,6 @@
         "edit-link": {
             "base": "https://github.com/chenhao2020/chenhao2020.github.io/edit/gh-pages/",
             "label": "编辑本页"
-        },
-        "theme-fexa":{
-            "search-placeholder":"输入关键字搜索",
-            "logo":"",
-            "favicon": ""
-        }   
+        }
     }
 }
