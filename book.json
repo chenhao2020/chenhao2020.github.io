@@ -76,8 +76,8 @@
         },
         "theme-fexa":{
             "search-placeholder":"输入关键字搜索",
-            "logo":"images/logo.png",
-            "favicon": "images/favicon.ico"
+            "logo":"",
+            "favicon": ""
         }   
     }
 }
