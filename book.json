@@ -23,15 +23,19 @@
         "-sharing","-fontsettings",
         "alerts",
         "image-wrapper",
-        "theme-fexa"
+        "theme-fexa-black"
     ],
     "variables": {
         "themeFexa":{
+            "showHome": true,
+            "showNavigator": true,     
             "nav":[
                 {
                     "url":"https://www.creativewriting.cn/",
                     "target":"_blank",
-                    "name": "创意写作"
+                    "name": "创意写作",
+                    "border": "nav-border",
+                    "type": "console" 
                 },
                 {
                     "url":"/robotcar/",
@@ -73,7 +77,7 @@
         "theme-fexa":{
             "search-placeholder":"输入关键字搜索",
             "logo":"images/avatar.png",
-            "favicon": ""
+            "favicon": "images/favicon.png"
         }   
     }
 }
