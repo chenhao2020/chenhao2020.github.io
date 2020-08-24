@@ -25,13 +25,7 @@
 
 
 /* PC */
-.header-inner .logo {
-    float: left;
-    height: 64px;
-    width: 64px;
-    background: url(images/avatar.png);
-    background-repeat: no-repeat;
-}
+
 
 .book-summary-title {
     display:none;

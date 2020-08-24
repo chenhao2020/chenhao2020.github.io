@@ -1,5 +1,5 @@
 {
-    "title": "陈昊个人知识管理系统（PKMS）",
+    "title": "",
     "description": "陈昊个人知识管理系统（PKMS）",
     "author": "陈昊",
     "language": "zh-hans",
@@ -76,7 +76,7 @@
         },
         "theme-fexa":{
             "search-placeholder":"输入关键字搜索",
-            "logo":"images/avatar.png",
+            "logo":"images/logo.png",
             "favicon": "images/favicon.png"
         }   
     }
