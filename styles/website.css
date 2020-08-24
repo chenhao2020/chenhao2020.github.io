@@ -25,7 +25,16 @@
 
 
 /* PC */
+.header-inner .logo {
+    background: url(images/logo.png);
+    background-repeat: no-repeat;
+}
 
+.header-inner .home-icon {
+    float: left;
+    margin-left: 10px;
+
+}
 
 .book-summary-title {
     display:none;
