@@ -18,12 +18,11 @@
         "tbfed-pagefooter",
         "donate",
         "edit-link",
-        "-sharing","-fontsettings",
         "image-wrapper"
     ],
     "pluginsConfig": {
         "insert-logo": {
-            "url": "images/logo.png",
+            "url": "/styles/images/avatar.png",
             "style": "background: none;"
         },
         "chapter-fold":{},
