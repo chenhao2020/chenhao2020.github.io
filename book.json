@@ -12,12 +12,10 @@
         "epub": "styles/epub.css"
     },
     "plugins": [
-        "theme-code",
         "insert-logo",
-        "folding-chapters",
+        "folding-menu",
         "splitter",
         "tbfed-pagefooter",
-        "donate",
         "edit-link",
         "image-wrapper",
         "-lunr", "-search"
@@ -27,19 +25,14 @@
             "url": "/styles/images/logo.png",
             "style": "background: none;"
         },
-        "folding-chapters":{},
+        "folding-menu":	{
+            "animationDuration": 500,
+            "sticky":            true
+          },
         "tbfed-pagefooter": {
             "copyright": "Copyright & copy creativewriting.cn 2020",
             "modify_label": "该文件修订时间：",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
-        },
-        "donate": {
-            "wechat": "https://www.creativewriting.cn/gallery/thumbnails/wechat.jpg",
-            "alipay": "https://www.creativewriting.cn/gallery/thumbnails/alipay.jpg",
-            "title": "",
-            "button": "打赏",
-            "alipayText": "支付宝打赏",
-            "wechatText": "微信打赏"
         },
         "edit-link": {
             "base": "https://github.com/chenhao2020/chenhao2020.github.io/edit/gh-pages/",
