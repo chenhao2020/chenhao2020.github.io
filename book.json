@@ -12,8 +12,9 @@
         "epub": "styles/epub.css"
     },
     "plugins": [
+        "theme-code",
         "insert-logo",
-        "chapter-fold",
+        "folding-chapters",
         "splitter",
         "tbfed-pagefooter",
         "donate",
@@ -26,7 +27,7 @@
             "url": "/styles/images/logo.png",
             "style": "background: none;"
         },
-        "chapter-fold":{},
+        "folding-chapters":{},
         "tbfed-pagefooter": {
             "copyright": "Copyright & copy creativewriting.cn 2020",
             "modify_label": "该文件修订时间：",
