@@ -22,7 +22,7 @@
     ],
     "pluginsConfig": {
         "insert-logo": {
-            "url": "/styles/images/avatar.png",
+            "url": "/styles/images/logo.png",
             "style": "background: none;"
         },
         "chapter-fold":{},
