@@ -1,16 +1,10 @@
 # Book Title
 
-## Introduction
-
 * [前言](README.md)
-
----
 
 ## 知识管理
 
 * [PKM](pkm/output.md)
-
----
 
 ## 文档工程
 
