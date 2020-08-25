@@ -1,7 +1,5 @@
 # Summary
 
-## 陈昊个人知识管理系统
-
 * [PKMS](README.md)
 ----
 ## 知识管理
