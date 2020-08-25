@@ -1,6 +1,4 @@
-# Book Title
-
-* [前言](README.md)
+* [《陈昊的个人知识管理系统》](README.md)
 
 ## 知识管理
 
