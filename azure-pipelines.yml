@@ -21,6 +21,7 @@ steps:
 # 安装gitbook脚手架，
 - script: |
     npm install gitbook-cli -g;
+    npm install gitbook-theme-clarity;
     gitbook install;
     gitbook build
   displayName: 'Installing dependencies...'
