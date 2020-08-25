@@ -18,7 +18,7 @@
         "tbfed-pagefooter",
         "donate",
         "edit-link",
-        "sidebar-style",
+        "gitbook-theme-clarity",
         "image-wrapper"
     ],
     "pluginsConfig": {
@@ -40,9 +40,6 @@
             "alipayText": "支付宝打赏",
             "wechatText": "微信打赏"
         },
-        "sidebar-style": {
-            "title": "个人知识管理"
-          },
         "edit-link": {
             "base": "https://github.com/chenhao2020/chenhao2020.github.io/edit/gh-pages/",
             "label": "编辑本页"
