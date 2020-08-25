@@ -12,18 +12,13 @@
         "epub": "styles/epub.css"
     },
     "plugins": [
-        "insert-logo",
         "folding-menu",
         "tbfed-pagefooter",
         "edit-link",
         "image-wrapper",
-        "-lunr", "-search"
+        "-lunr", "-search", "search-plus"
     ],
     "pluginsConfig": {
-        "insert-logo": {
-            "url": "/styles/images/logo.png",
-            "style": "background: none;"
-        },
         "folding-menu":	{
             "animationDuration": 500,
             "sticky":            true
