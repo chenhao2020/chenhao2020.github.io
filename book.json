@@ -14,7 +14,6 @@
     "plugins": [
         "insert-logo",
         "folding-menu",
-        "splitter",
         "tbfed-pagefooter",
         "edit-link",
         "image-wrapper",
