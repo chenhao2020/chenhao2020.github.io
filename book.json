@@ -16,6 +16,7 @@
         "tbfed-pagefooter",
         "edit-link",
         "image-wrapper",
+        "multipart",
         "-lunr", "-search", "search-plus"
     ],
     "pluginsConfig": {
