@@ -41,8 +41,7 @@
             "wechatText": "微信打赏"
         },
         "sidebar-style": {
-            "title": "个人知识管理",
-            "author": "陈昊"
+            "title": "个人知识管理"
           },
         "edit-link": {
             "base": "https://github.com/chenhao2020/chenhao2020.github.io/edit/gh-pages/",
