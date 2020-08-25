@@ -19,7 +19,7 @@
         "donate",
         "edit-link",
         "image-wrapper",
-        "-lunr", "-search", "search-plus"
+        "-lunr", "-search"
     ],
     "pluginsConfig": {
         "insert-logo": {
