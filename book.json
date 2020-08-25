@@ -18,7 +18,8 @@
         "tbfed-pagefooter",
         "donate",
         "edit-link",
-        "image-wrapper"
+        "image-wrapper",
+        "-lunr", "-search", "search-plus"
     ],
     "pluginsConfig": {
         "insert-logo": {
