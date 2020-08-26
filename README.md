@@ -6,7 +6,7 @@
 
 ## 脑图
 
-<iframe src="https://my.mindnode.com/Pgzxiz8jCyy8TynfCSDqzyDXMvxRsAsixEqTanoT/em#92,-79,-15" frameborder="0" marginheight="0" marginwidth="0" style="border: 1px solid rgb(204, 204, 204); width: 100%; height: 600px;" onmousewheel=""></iframe>
+<iframe src="https://my.mindnode.com/Pgzxiz8jCyy8TynfCSDqzyDXMvxRsAsixEqTanoT/em#92,-79,-4" frameborder="0" marginheight="0" marginwidth="0" style="border: 1px solid rgb(204, 204, 204); width: 100%; height: 600px;" onmousewheel=""></iframe>
 
 ## 持续学习
 
