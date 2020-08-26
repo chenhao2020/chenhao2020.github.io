@@ -25,7 +25,7 @@
             "sticky":            true
           },
         "insert-logo": {
-            "url": "styles/images/logo.png",
+            "url": "/styles/images/logo.png",
             "style": "background: none;"
         },                
         "tbfed-pagefooter": {
