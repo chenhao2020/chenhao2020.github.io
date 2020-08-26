@@ -1,11 +1,12 @@
 .book-summary {
     width: 210px;
 }
-
+.book-summary ul.summary li.active>a {
+    color: #f49501;
+}
 .book-summary ul.summary li.header {
     border-top: 1px solid rgba(0,0,0,.07);
 }
-
 .gitbook-link {
     display: none;
 }
