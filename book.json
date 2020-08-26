@@ -16,6 +16,7 @@
         "tbfed-pagefooter",
         "edit-link",
         "image-wrapper",
+        "insert-logo",
         "-lunr", "-search", "search-plus"
     ],
     "pluginsConfig": {
@@ -23,6 +24,10 @@
             "animationDuration": 500,
             "sticky":            true
           },
+        "insert-logo": {
+            "url": "styles/images/logo.png",
+            "style": "background: none;"
+        },                
         "tbfed-pagefooter": {
             "copyright": "Copyright & copy creativewriting.cn 2020",
             "modify_label": "该文件修订时间：",
