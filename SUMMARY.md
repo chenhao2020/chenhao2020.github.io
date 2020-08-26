@@ -45,7 +45,7 @@
 
 ## 影音照片
 
-* [照片收藏]](README.md)
-  * [日本铁路周游券](yingyin/pic1.md)
+* [照片收藏](yingyin/zhaopian/README.md)
+  * [日本铁路周游券](yingyin/zhaopian/pic1.md)
 * [视频收藏](README.md)
 * [音乐收藏](README.md)
