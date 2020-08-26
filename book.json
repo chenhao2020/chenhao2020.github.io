@@ -17,7 +17,7 @@
         "edit-link",
         "image-wrapper",
         "insert-logo",
-        "-lunr", "-search", "search-plus"
+        "-lunr", "-search"
     ],
     "pluginsConfig": {
         "folding-menu":	{
@@ -29,7 +29,7 @@
             "style": "background: none;"
         },                
         "tbfed-pagefooter": {
-            "copyright": "Copyright & copy creativewriting.cn 2020",
+            "copyright": "Creativewriting.cn",
             "modify_label": "该文件修订时间：",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
         },
