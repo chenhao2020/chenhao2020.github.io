@@ -17,8 +17,7 @@
         "edit-link",
         "image-wrapper",
         "insert-logo",
-        "-lunr", "-search",
-        "page-toc"
+        "-lunr", "-search"
     ],
     "pluginsConfig": {
         "folding-menu":	{
