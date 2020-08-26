@@ -1,6 +1,3 @@
-.book-summary {
-    width: 210px;
-}
 .book-summary ul.summary li.active>a {
     color: #f49501;
 }
