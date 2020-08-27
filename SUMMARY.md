@@ -1,18 +1,8 @@
 * [《陈昊的个人Wiki》](README.md)
 
-## 知识管理
-
-* [PKM](pkm/output.md)
-
-## 文档工程
-
-* [文档编写](wendang/README.md)
-
-  * [编写概述](wendang/overview.md)
-
 ## 硬件编程
 
-* [树莓派小车](car/Preface/overview.md) 
+* [树莓派车](car/Preface/overview.md) 
   * [第一章 概述](car/Preface/README.md)  
   * [第二章 传动系统](car/Chapter1/README.md)
   * [第三章 电机驱动器及python程序](car/Chapter2/README.md)
@@ -29,6 +19,16 @@
   * [参考 PCA9685的使用说明](car/Reference/README.md) 
   * [参考 BTS7960的使用说明](car/Reference/README1.md) 
   * [资源](car/Resouces/README.md) 
+
+## 知识管理
+
+* [PKM](pkm/output.md)
+
+## 文档工程
+
+* [文档编写](wendang/README.md)
+
+  * [编写概述](wendang/overview.md)
 
 ## 文艺创作
 
@@ -61,5 +61,5 @@
   * [日本铁路周游券](yingyin/zhaopian/pic1.md)
   * [京都国立博物馆](yingyin/zhaopian/pic2.md)
 * [视频收藏](README.md)
-* [音乐收藏](yingyin/yinyue/README.md)
-  * [老歌](yingyin/yinyue/music.md)
+* [音乐收藏](yingyin/yinyue/music.md)
+

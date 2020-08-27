@@ -2,7 +2,8 @@
     padding: 20px 20px 6px 20px;
 }
 .articles li {
-    text-align: left;
+    text-align: left!important;
+    padding-left: 75px;
 }
 .book-summary ul.summary li.active>a {
     color: #f49501;
