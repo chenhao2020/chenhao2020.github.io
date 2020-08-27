@@ -31,9 +31,9 @@
 
 ## 第四部分 文艺创作
 
-* [长安历史](wenyi/README.md)
-* [小说剧本](wenyi/README.md)
-  * [知识输入](wenyi/README.md)
+* [长安历史](wenyi/README1.md)
+* [小说剧本](wenyi/README2.md)
+  * [知识输入](wenyi/README3.md)
   * [创意写作](wenyi/chuangyixiezuo.md)
 
 ## 第五部分 影音分享
