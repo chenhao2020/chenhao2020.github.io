@@ -1,3 +1,6 @@
+.book .book-summary .book-logo {
+    padding: 20px 20px 6px 20px;
+}
 .book-summary ul.summary li.active>a {
     color: #f49501;
 }

@@ -1,4 +1,4 @@
-* [《陈昊的个人知识管理》](README.md)
+* [《陈昊的个人Wiki》](README.md)
 
 ## 知识管理
 
@@ -10,13 +10,26 @@
 
   * [编写概述](wendang/overview.md)
 
-## 编程学习
+## 小车编程
 
-* [智能小车](biancheng/README.md)
+### 第一部分 机器人小车的安装
 
-  * [编程语言学习](README.md)
-
-  * [硬件收集和学习](README.md)
+* [第一章 概述](car/Preface/README.md)  
+* [第二章 传动系统](car/Chapter1/README.md)
+* [第三章 电机驱动器及python程序](car/Chapter2/README.md)
+* [第四章 户外摄像头套件](car/Chapter3/README.md)
+* [第五章 差分GPS](car/Chapter4/README.md)
+* [第六章 监视和防御系统](car/Chapter5/README.md)
+* [第七章 概述](car/Chapter6/README.md)
+* [第八章 理论设置](car/Chapter7/README.md) 
+* [第九章 GPS天线设置](car/Chapter8/README.md)
+* [第十章 软件安装](car/Chapter9/README.md)
+* [第十一章 基站配置](car/Chapter10/README.md)
+* [第十二章 移动单元配置](car/Chapter11/README.md)
+* [第十二章 资源与参考](car/Chapter11/README.md)
+  * [参考 PCA9685的使用说明](car/Reference/README.md) 
+  * [参考 BTS7960的使用说明](car/Reference/README1.md) 
+  * [资源](car/Resouces/README.md) 
 
 ## 文艺创作
 
