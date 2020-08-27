@@ -10,9 +10,9 @@
 
   * [编写概述](wendang/overview.md)
 
-## 小车编程
+## 硬件编程
 
-* [概述](car/Preface/overview.md) 
+* [树莓派小车](car/Preface/overview.md) 
   * [第一章 概述](car/Preface/README.md)  
   * [第二章 传动系统](car/Chapter1/README.md)
   * [第三章 电机驱动器及python程序](car/Chapter2/README.md)
@@ -25,7 +25,7 @@
   * [第十章 软件安装](car/Chapter9/README.md)
   * [第十一章 基站配置](car/Chapter10/README.md)
   * [第十二章 移动单元配置](car/Chapter11/README.md)
-* [资源与参考](car/Chapter11/README.md)
+* [资源参考](car/Chapter11/README.md)
   * [参考 PCA9685的使用说明](car/Reference/README.md) 
   * [参考 BTS7960的使用说明](car/Reference/README1.md) 
   * [资源](car/Resouces/README.md) 
