@@ -1,4 +1,4 @@
-* [《陈昊的个人Wiki》](README.md)
+* [《陈昊的个人Log》](README.md)
 
 ## 硬件编程
 
@@ -27,20 +27,13 @@
 ## 文档工程
 
 * [文档编写](wendang/README.md)
-
   * [编写概述](wendang/overview.md)
 
 ## 文艺创作
 
 * [长安历史](wenyi/README.md)
-
 * [小说剧本](wenyi/README.md)
-
   * [知识输入](wenyi/README.md)
-
-    * [图书](wenyi/README.md)
-      * [汉书](wenyi/README.md)
-      * [网页视频](wenyi/README.md)
   * [创意写作](wenyi/chuangyixiezuo.md)
 
 ## 影音照片
