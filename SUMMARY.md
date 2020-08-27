@@ -32,27 +32,15 @@
 
 ## 文艺创作
 
-* [长安历史](README.md)
+* [长安历史](wenyi/README.md)
 
-* [小说剧本](README.md)
+* [小说剧本](wenyi/README.md)
 
-  * [知识输入](README.md)
+  * [知识输入](wenyi/README.md)
 
-    * [图书](README.md)
-        
-      * [汉书](README.md)
-        
-        * [史记](README.md)
-        
-        * [魏书](README.md)
-        
-        * [周书](README.md)
-        
-        * [隋书](README.md)
-        
-        * [新旧唐书](README.md)
-        
-        * [网页视频](README.md)
+    * [图书](wenyi/README.md)
+      * [汉书](wenyi/README.md)
+      * [网页视频](wenyi/README.md)
   * [创意写作](wenyi/chuangyixiezuo.md)
 
 ## 影音照片
@@ -60,6 +48,6 @@
 * [照片收藏](yingyin/zhaopian/README.md)
   * [日本铁路周游券](yingyin/zhaopian/pic1.md)
   * [京都国立博物馆](yingyin/zhaopian/pic2.md)
-* [视频收藏](README.md)
+* [视频收藏](yingyin/shipin/README.md)
 * [音乐收藏](yingyin/yinyue/music.md)
 
