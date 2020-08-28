@@ -1,4 +1,4 @@
-* [《创意写作社陈昊》](README.md)
+* [创意写作社-陈昊](README.md)
 
 ## 第一部分 文章输出
 
@@ -16,6 +16,6 @@
 
 * [照片收藏](yingyin/zhaopian/README.md)
   * [日本游记](yingyin/zhaopian/pic1.md)
-
+  * [三辅黄图](yingyin/zhaopian/pic2.md)
 * [视频收藏](yingyin/shipin/README.md)
 * [音乐收藏](yingyin/yinyue/music.md)
