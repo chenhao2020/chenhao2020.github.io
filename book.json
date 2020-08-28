@@ -17,6 +17,7 @@
         "edit-link",
         "image-wrapper",
         "insert-logo",
+        "anchor-navigation-ex",
         "-lunr", "-search"
     ],
     "pluginsConfig": {
@@ -27,7 +28,10 @@
         "insert-logo": {
             "url": "/styles/images/logo.png",
             "style": "background: none;"
-        },                
+        }, 
+        "anchor-navigation-ex": {
+            "showGoTop": true
+          },               
         "tbfed-pagefooter": {
             "copyright": "© 创意写作社 2020",
             "modify_label": "该文件修订时间：",
