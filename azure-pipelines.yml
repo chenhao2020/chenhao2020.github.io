@@ -41,6 +41,8 @@ steps:
     git checkout -b gh-pages;
     git push upstream gh-pages --force;
     git checkout master;
+    git log --oneline;
+    git status;
     git push coding master --force
   displayName: 'Deploying...'
 
