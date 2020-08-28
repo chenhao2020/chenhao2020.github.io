@@ -30,7 +30,6 @@
             "style": "background: none;"
         }, 
         "fancybox": {
-            //your fancybox config here
           },
         "anchor-navigation-ex": {
             "showGoTop": true
