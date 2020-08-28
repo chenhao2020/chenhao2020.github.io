@@ -15,7 +15,7 @@
 ## 第三部分 生活杂碎
 
 * [照片收藏](yingyin/zhaopian/README.md)
-  * [日本铁路周游券](yingyin/zhaopian/pic1.md)
-  * [京都国立博物馆](yingyin/zhaopian/pic2.md)
+  * [日本游记](yingyin/zhaopian/pic1.md)
+
 * [视频收藏](yingyin/shipin/README.md)
 * [音乐收藏](yingyin/yinyue/music.md)
