@@ -15,7 +15,7 @@
         "folding-menu",
         "tbfed-pagefooter",
         "edit-link",
-        "image-wrapper",
+        "fancybox",
         "insert-logo",
         "anchor-navigation-ex",
         "-lunr", "-search"
@@ -29,6 +29,9 @@
             "url": "/styles/images/logo.png",
             "style": "background: none;"
         }, 
+        "fancybox": {
+            //your fancybox config here
+          },
         "anchor-navigation-ex": {
             "showGoTop": true
           },               
