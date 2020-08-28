@@ -27,6 +27,8 @@ steps:
 
 # 托管仓库需要部署
 - script:
+    ssh-keyscan -t rsa e.coding.net >> ~/.ssh/known_hosts
+    git remote add coding git@e.coding.net:chenhao2020/book1/book1.git;
     git remote add upstream git@github.com:chenhao2020/chenhao2020.github.io.git;
     cp -R _book/* .;
     rm -rf node_modules;
@@ -38,6 +40,7 @@ steps:
     git add .;
     git commit -m 'Update docs';
     git push upstream gh-pages --force
+    git push coding master --force
   displayName: 'Deploying...'
 
 # 安全测试
