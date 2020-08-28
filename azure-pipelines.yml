@@ -40,11 +40,7 @@ steps:
     git commit -m 'Update docs';
     git checkout -b gh-pages;
     git push upstream gh-pages --force;
-    git checkout master;
-    ls -a;
-    git add .;
-    git commit -m 'Update docs2';
-    git push coding master --force
+    git push coding gh-pages --force
   displayName: 'Deploying...'
 
 # 安全测试
