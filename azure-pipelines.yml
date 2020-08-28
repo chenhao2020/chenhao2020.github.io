@@ -41,7 +41,9 @@ steps:
     git checkout -b gh-pages;
     git push upstream gh-pages --force;
     git checkout master;
-    git status;
+    ls -a;
+    git add .;
+    git commit -m 'Update docs2';
     git push coding master --force
   displayName: 'Deploying...'
 
