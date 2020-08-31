@@ -2,13 +2,10 @@
 
 ## 第一部分 文章输出
 
-* [文档编写](wendang/README.md)
-  * [编写概述](wendang/overview.md)
 * [知识管理](pkm/output.md)
 
 ## 第二部分 作品输出
 
-* [如何写小说](https://chenhao2020.github.io/pub-book)
 * [创意写作社](https://www.creativewriting.cn)
 * [树莓派小车](https://chenhao2020.github.io/robotcar) 
 
