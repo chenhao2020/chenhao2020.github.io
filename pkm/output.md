@@ -1,4 +1,6 @@
-# 个人知识管理概述
+# 个人知识管理
+
+## 概述
 
 当今社会，信息大爆炸，每时每刻都会有大量的信息出现在互联网上，这些信息冗余混乱，会造成我们的大脑信息过载。有的信息生产周期短，发布成本低，缺乏审批，信息质量相对较低。这就需要一种（个人知识管理）机制来处理这些信息。
 
@@ -10,7 +12,7 @@
 
 - Onenote 主要用于，收集，分类，检索，整理信息；
 - MindNode 脑图工具
-- Notability/Goodnotes 记笔记
+- Notability/Goodnotes 笔记
 - Hexo-Gitbook 输出和共享
 
 ## 流程
@@ -40,9 +42,3 @@
 
 - **撰写评论**，综合多种观点，解释新知识。
 - 尝试将您的新想法付诸**实践**
-
-附：我的脑图
-
-<iframe src="https://my.mindnode.com/Pgzxiz8jCyy8TynfCSDqzyDXMvxRsAsixEqTanoT/em#92,-79,-2" frameborder="0" marginheight="0" marginwidth="0" style="border: 1px solid rgb(204, 204, 204); width: 100%; height: 600px;" onmousewheel=""></iframe>
-
-随着时间的推移，新需求，新问题，新知识会不断出现。以上脑图也将持续改进。这也是持续学习的意义所在。

@@ -1,14 +1,16 @@
 # 站点介绍
 
-我叫陈昊，字科。爱好历史，文学。懂一点代码，创办了[创意写作社](https://www.creativewriting.cn/)。
+新丰美酒斗十千，**咸阳**游侠多少年。--王维《少年行四首》
+**渭城**朝雨浥轻尘， 客舍青青柳色新。--王维《送元二使安西》
 
-这是我的博客，我的一个知识输出平台。
+我叫陈昊，字科，咸阳渭城人。爱好历史，文学。懂一点代码，创建了[创意写作社](https://www.creativewriting.cn/)。
+
+本站是我的个人Wiki，我的一个展示-输出平台。
 
 **本站采用的技术**
 
-- Coding Pages：前端代码托管。
-- Gitbook：文档（或博客）构建工具，使用 Git 和 Markdown来编排内容。
-- Azure Devops 微软的持续集成和持续部署工具。
-
-
+- Coding Pages & Github Page：前端代码的托管。
+- Gitbook：文档构建程序，使用 Git 和 Markdown来编排内容。
+- Thumbsup: 画廊构建程序。
+- Azure Devops 持续集成部署工具。
 

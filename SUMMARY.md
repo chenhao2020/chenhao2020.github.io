@@ -1,7 +1,8 @@
 * [陈昊的个人Wiki](README.md)
 
-## 第一部分 文章输出
+## 第一部分 文章想法
 
+* [站点规划](pkm/mindmap.md)
 * [知识管理](pkm/output.md)
 
 ## 第二部分 作品输出
