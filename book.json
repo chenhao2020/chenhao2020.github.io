@@ -32,6 +32,7 @@
         "fancybox": {
           },
         "anchor-navigation-ex": {
+            "showLevel": false,
             "showGoTop": true
           },               
         "tbfed-pagefooter": {
