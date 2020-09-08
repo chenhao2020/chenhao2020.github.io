@@ -1,3 +1,7 @@
+.book.font-family-1 {
+    font-family: Helvetica, Tahoma, Arial, "PingFang SC", "Microsoft YaHei", "WenQuanYi Micro Hei", "Noto Sans CJK", sans-serif;
+}
+
 .book .book-summary .book-logo {
     padding: 20px 20px 6px 20px;
 }
