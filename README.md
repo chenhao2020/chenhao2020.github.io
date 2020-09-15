@@ -16,5 +16,4 @@
 - Azure Devops 持续集成部署工具。
    
 
-![![](/styles/images/学习方法模型.png)](/styles/images/学习方法模型.png)  
 
