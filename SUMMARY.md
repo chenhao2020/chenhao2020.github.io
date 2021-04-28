@@ -2,23 +2,16 @@
 
 ## 第一部分 历史文学类
 
-* [站点规划](pkm/mindmap.md)
-* [知识管理](pkm/output.md)
-
 ## 第二部分 IT技术类
-
-* [创意写作社](https://www.creativewriting.cn)
-* [树莓派小车](https://chenhao2020.github.io/robotcar)
 
 ## 第三部分 生活娱乐
 
-* [相册分享](https://gallery.creativewriting.cn)
+* [相册分享](https://xiangce.creativewriting.cn/)
 * [音乐收藏](yingyin/yinyue/music.md)
 
 ## 第四部分 其他作品
 
 * [创意写作社](https://www.creativewriting.cn)
 * [树莓派小车](https://chenhao2020.github.io/robotcar)
+* [写第一小说](https://chenhao2020.github.io/pub-book)
 * [图书分享](https://wangpan.creativewriting.cn)
-
-dsv 
