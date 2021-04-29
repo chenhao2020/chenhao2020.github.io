@@ -4,6 +4,8 @@
 
 ## 第二部分 IT技术类
 
+* [ssh远程访问UOS桌面版](UOS/uossshd.md)
+
 ## 第三部分 生活娱乐
 
 * [相册分享](https://xiangce.creativewriting.cn/)
