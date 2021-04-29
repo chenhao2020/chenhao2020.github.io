@@ -1,11 +1,12 @@
 # ssh远程访问UOS桌面版
 
-安装了UOS桌面版后，如果您需要在其他的电脑上通过ssh远程访问这台UOS系统电脑，需要的操作如下。
+如果您在A电脑上安装了UOS桌面版后，需要在B电脑上通过ssh远程访问这台UOS系统，需要做如下操作才能顺利访问。
 
 ## 前提条件
 
-- UOS版本号：edition（1030）和version（20）
-- UOS 账号一个
+- A电脑已安装UOS桌面版。
+  版本号为edition（1030）和version（20）。
+- UOS 账号一个。
 
 ## 操作步骤
 
@@ -15,6 +16,4 @@
 1. 输入`passwd`修改root密码
 1. 修改`/etc/ssh/sshd_config`中的允许root用户登录。
 1. 输入`service sshd restart`重启sshd服务。
-
-
 
