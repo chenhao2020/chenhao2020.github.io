@@ -1,0 +1,40 @@
+    // button
+    .button.is-primary, .button.is-light, .button.is-small
+        background-color: #f09409
+        color: #ffffff
+        &:hover, &.is-hovered
+            color: #ffffff
+            background-color: #f59300
+        &:active, &.is-active
+            color: #ffffff
+            background-color: #f59300
+    .button.is-white,
+    .button.is-transparent
+        background-color: transparent
+        &:hover
+            background-color: #f09409 !important
+    .pagination .pagination-next,
+    .pagination .pagination-previous
+    .pagination-link:not(.is-current)
+        color: #363636
+        background-color: #ffffff
+        a
+            color: #363636
+    .pagination .pagination-link.is-current
+        background: #f59300
+        border-color: #f59300
+
+    // navigation bar, cards
+    .navbar-menu
+        background-color: inherit
+    .navbar-main .navbar-menu .navbar-item
+        &:hover,
+        &:focus,
+        &.is-active
+            color: #f09409
+    .link-muted:hover
+        color: #f09409 !important
+    .tag:not(body).is-primary
+        background-color: #f09409
+        color: #fff
+
