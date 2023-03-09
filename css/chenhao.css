@@ -1,0 +1,62 @@
+.button.is-primary,
+.button.is-light,
+.button.is-small {
+  background-color: #f09409;
+  color: #fff;
+}
+.button.is-primary:hover,
+.button.is-light:hover,
+.button.is-small:hover,
+.button.is-primary.is-hovered,
+.button.is-light.is-hovered,
+.button.is-small.is-hovered {
+  color: #fff;
+  background-color: #f59300;
+}
+.button.is-primary:active,
+.button.is-light:active,
+.button.is-small:active,
+.button.is-primary.is-active,
+.button.is-light.is-active,
+.button.is-small.is-active {
+  color: #fff;
+  background-color: #f59300;
+}
+.button.is-white,
+.button.is-transparent {
+  background-color: transparent;
+}
+.button.is-white:hover,
+.button.is-transparent:hover {
+  background-color: #f09409 !important;
+}
+.pagination .pagination-next,
+.pagination .pagination-previous,
+.pagination-link:not(.is-current) {
+  color: #363636;
+  background-color: #fff;
+}
+.pagination .pagination-next a,
+.pagination .pagination-previous a,
+.pagination-link:not(.is-current) a {
+  color: #363636;
+}
+.pagination .pagination-link.is-current {
+  background: #f59300;
+  border-color: #f59300;
+}
+.navbar-menu {
+  background-color: inherit;
+}
+.navbar-main .navbar-menu .navbar-item:hover,
+.navbar-main .navbar-menu .navbar-item:focus,
+.navbar-main .navbar-menu .navbar-item.is-active {
+  color: #f09409;
+}
+.link-muted:hover {
+  color: #f09409 !important;
+}
+.tag:not(body).is-primary {
+  background-color: #f09409;
+  color: #fff;
+}

@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="generator" content="Hexo 4.2.1"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><title>分类: 科学技术 - 安陵少年</title><meta description="安陵少年"><meta property="og:type" content="website"><meta property="og:title" content="安陵少年"><meta property="og:url" content="https://chenhao2020.github.io/"><meta property="og:site_name" content="安陵少年"><meta property="og:description" content="安陵少年"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://chenhao2020.github.io/images/og_image.png"><meta property="article:author" content="安陵少年"><meta property="article:tag" content="安陵少年"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/images/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://chenhao2020.github.io"},"headline":"安陵少年","image":["https://chenhao2020.github.io/images/og_image.png"],"author":{"@type":"Person","name":"安陵少年"},"description":"安陵少年"}</script><link rel="icon" href="/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/font-awesome/5.12.0/css/all.min.css"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/highlight.js/9.12.0/styles/monokai-sublime.min.css"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><script src="https://cdnjs.loli.net/ajax/libs/pace/1.0.2/pace.min.js"></script><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/justifiedGallery/3.7.0/css/justifiedGallery.min.css"><link rel="alternate" href="/atom.xml" title="安陵少年" type="application/atom+xml">
+</head><body class="is-3-column"><script type="text/javascript" src="/js/imaegoo/night.js"></script><canvas id="universe"></canvas><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img class="logo-img" src="/images/loading.gif" data-original="/images/logo.png" alt="安陵少年" height="28"><img class="logo-img-dark" src="/images/loading.gif" data-original="/images/logo.png" alt="安陵少年" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">首页</a><a class="navbar-item" href="/daohang">网址收藏</a><a class="navbar-item" href="/archives">时光轴</a><a class="navbar-item" href="/about">关于</a></div><div class="navbar-end"><a class="navbar-item night" id="night-nav" title="Night Mode" href="javascript:;"><i class="fas fa-moon" id="night-icon"></i></a><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/chenhao2020/"><i class="fab fa-github"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/categories">分类</a></li><li class="is-active"><a href="#" aria-current="page">科学技术</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2023-01-16T18:39:11.000Z" title="2023-01-16T18:39:11.000Z">2023-01-16</time><span class="level-item"><a class="link-muted" href="/categories/%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF/">科学技术</a></span><span class="level-item">4 分钟 读完 (大约 559 个字)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF/%E7%94%A8%E6%A0%91%E8%8E%93%E6%B4%BE%E7%BB%99%E8%80%81%E6%97%A7%E6%B1%BD%E8%BD%A6%E5%81%9A%E4%B8%AA%E5%89%AF%E5%B1%8F%E4%B8%80/">用树莓派给老旧汽车做个副屏（一）</a></h1><div class="content" id="content1"><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>家里的手动党老车只配了个收音机，没有中控屏，没有蓝牙，想利用家里吃灰的树莓派做个车载副中控项目，功能暂时如下：</p>
+<ul>
+<li>3.5寸屏显示时间、天气、新闻等</li>
+<li>利用将车内音响改变为蓝牙音箱<br>…</li>
+</ul>
+<h2 id="预备材料"><a href="#预备材料" class="headerlink" title="预备材料"></a>预备材料</h2><p>-树莓派3b<br>-LCD3.5寸屏<br>-树莓派官方buster镜像</p>
+<h2 id="预览"><a href="#预览" class="headerlink" title="预览"></a>预览</h2><p><img src="/images/loading.gif" data-original="/images/mojing1.jpg" alt="vk22-1"></p>
+<h2 id="技术前提"><a href="#技术前提" class="headerlink" title="技术前提"></a>技术前提</h2><ul>
+<li>熟悉Linux系统</li>
+<li>熟悉Docker</li>
+<li>了解MagicMirror项目</li>
+</ul>
+<h2 id="树莓派Linux系统配置"><a href="#树莓派Linux系统配置" class="headerlink" title="树莓派Linux系统配置"></a>树莓派Linux系统配置</h2><h3 id="给树莓派改密码"><a href="#给树莓派改密码" class="headerlink" title="给树莓派改密码"></a>给树莓派改密码</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo -I</span><br><span class="line">passwd </span><br><span class="line">passwd pi</span><br></pre></td></tr></table></figure>
+<h3 id="给树莓派改语言时区扩展磁盘空间"><a href="#给树莓派改语言时区扩展磁盘空间" class="headerlink" title="给树莓派改语言时区扩展磁盘空间"></a>给树莓派改语言时区扩展磁盘空间</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo raspi-config</span><br></pre></td></tr></table></figure>
+<h3 id="开启开机启动ssh服务并设置允许root用户登录"><a href="#开启开机启动ssh服务并设置允许root用户登录" class="headerlink" title="开启开机启动ssh服务并设置允许root用户登录"></a>开启开机启动ssh服务并设置允许root用户登录</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo nano &#x2F;etc&#x2F;ssh&#x2F;sshd_config</span><br></pre></td></tr></table></figure>
+<h3 id="给树莓派Linux-buster系统换源"><a href="#给树莓派Linux-buster系统换源" class="headerlink" title="给树莓派Linux buster系统换源"></a>给树莓派Linux buster系统换源</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 编辑 sudo nano &#96;&#x2F;etc&#x2F;apt&#x2F;sources.list&#96; 文件，删除原文件所有内容，用以下内容取代：</span><br><span class="line">deb http:&#x2F;&#x2F;mirrors.tuna.tsinghua.edu.cn&#x2F;raspbian&#x2F;raspbian&#x2F; buster main non-free contrib rpi</span><br><span class="line">deb-src http:&#x2F;&#x2F;mirrors.tuna.tsinghua.edu.cn&#x2F;raspbian&#x2F;raspbian&#x2F; buster main non-free contrib rpi</span><br><span class="line"># 编辑 sudo nano &#96;&#x2F;etc&#x2F;apt&#x2F;sources.list.d&#x2F;raspi.list&#96; 文件，删除原文件所有内容，用以下内容取代：</span><br><span class="line">deb http:&#x2F;&#x2F;mirrors.tuna.tsinghua.edu.cn&#x2F;raspberrypi&#x2F; buster main ui</span><br></pre></td></tr></table></figure>
+<h3 id="更新与升级树莓派buster系统"><a href="#更新与升级树莓派buster系统" class="headerlink" title="更新与升级树莓派buster系统"></a>更新与升级树莓派buster系统</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt update -y</span><br><span class="line">sudo apt upgrade -y</span><br></pre></td></tr></table></figure>
+<h3 id="安装docker"><a href="#安装docker" class="headerlink" title="安装docker"></a>安装docker</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -sSL https:&#x2F;&#x2F;get.daocloud.io&#x2F;docker | sh</span><br></pre></td></tr></table></figure>
+<h3 id="给Docker换源和开机启动Docker服务"><a href="#给Docker换源和开机启动Docker服务" class="headerlink" title="给Docker换源和开机启动Docker服务"></a>给Docker换源和开机启动Docker服务</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sudo nano &#x2F;etc&#x2F;docker&#x2F;daemon.json</span><br><span class="line">&#123; &quot;registry-mirrors&quot;: [ &quot;https:&#x2F;&#x2F;hub-mirror.c.163.com&quot;, &quot;https:&#x2F;&#x2F;ustc-edu-cn.mirror.aliyuncs.com&quot;, &quot;https:&#x2F;&#x2F;ghcr.io&quot;, &quot;https:&#x2F;&#x2F;mirror.baidubce.com&quot; ] &#125;</span><br><span class="line">sudo systemctl daemon-reload</span><br><span class="line">sudo systemctl enable docker</span><br><span class="line">sudo systemctl start docker</span><br></pre></td></tr></table></figure>
+<h3 id="下载Magicmirror-Docker镜像"><a href="#下载Magicmirror-Docker镜像" class="headerlink" title="下载Magicmirror Docker镜像"></a>下载Magicmirror Docker镜像</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker pull bastilimbach&#x2F;docker-magicmirror</span><br></pre></td></tr></table></figure>
+<h3 id="创建Magicmirror-Docker容器"><a href="#创建Magicmirror-Docker容器" class="headerlink" title="创建Magicmirror Docker容器"></a>创建Magicmirror Docker容器</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">docker run  -d \</span><br><span class="line">    --publish 80:8080 \</span><br><span class="line">    --restart always \</span><br><span class="line">    --volume ~&#x2F;magic_mirror&#x2F;config:&#x2F;opt&#x2F;magic_mirror&#x2F;config \</span><br><span class="line">    --volume ~&#x2F;magic_mirror&#x2F;modules:&#x2F;opt&#x2F;magic_mirror&#x2F;modules \</span><br><span class="line">    --volume &#x2F;etc&#x2F;localtime:&#x2F;etc&#x2F;localtime:ro \</span><br><span class="line">    --name magic_mirror \</span><br><span class="line">    bastilimbach&#x2F;docker-magicmirror</span><br></pre></td></tr></table></figure>
+<h2 id="配置Magicmirror服务"><a href="#配置Magicmirror服务" class="headerlink" title="配置Magicmirror服务"></a>配置Magicmirror服务</h2><p>进入Magicmirror Docker镜像安装第三方模块</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo docker exec -it magic_mirror bash</span><br><span class="line">cd magic_mirror</span><br><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;shbatm&#x2F;mmm-carousel</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
+<p>可选的模块如下</p>
+<p><a href="https://github.com/darickc/MMM-BackgroundSlideshow">https://github.com/darickc/MMM-BackgroundSlideshow</a><br><a href="https://github.com/cbrooker/MMM-Todoist">https://github.com/cbrooker/MMM-Todoist</a><br><a href="https://github.com/shbatm/mmm-carousel">https://github.com/shbatm/mmm-carousel</a><br><a href="https://github.com/BenRoe/MMM-SystemStats">https://github.com/BenRoe/MMM-SystemStats</a><br><a href="https://github.com/fewieden/MMM-voice">https://github.com/fewieden/MMM-voice</a><br><a href="https://github.com/AdamMoses-GitHub/MMM-ImageSlideshow">https://github.com/AdamMoses-GitHub/MMM-ImageSlideshow</a><br><a href="https://github.com/boazarad/MMM-CountDown">https://github.com/boazarad/MMM-CountDown</a><br><a href="https://github.com/LukeSkywalker92/MMM-Globe">https://github.com/LukeSkywalker92/MMM-Globe</a><br><a href="https://github.com/EbenKouao/MMM-SmartTouch">https://github.com/EbenKouao/MMM-SmartTouch</a><br><a href="https://github.com/NolanKingdon/MMM-MoonPhase">https://github.com/NolanKingdon/MMM-MoonPhase</a><br><a href="https://github.com/frdteknikelektro/MMM-SimpleLogo">https://github.com/frdteknikelektro/MMM-SimpleLogo</a><br><a href="https://github.com/mykle1/MMM-EARTH">https://github.com/mykle1/MMM-EARTH</a><br><a href="https://github.com/fewieden/MMM-AlarmClock">https://github.com/fewieden/MMM-AlarmClock</a></p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2022-05-29T20:39:11.000Z" title="2022-05-29T20:39:11.000Z">2022-05-29</time><span class="level-item"><a class="link-muted" href="/categories/%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF/">科学技术</a></span><span class="level-item">2 分钟 读完 (大约 335 个字)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF/%E6%95%99%E4%BD%A0%E5%9C%A8%E5%AE%89%E5%8D%93%E7%94%B5%E8%A7%86%E6%88%96%E7%9B%92%E5%AD%90%E4%B8%8A%E7%94%A8%E6%89%8B%E6%9F%84%E7%8E%A9GTA3%E5%91%A8%E5%B9%B4%E7%BA%AA%E5%BF%B5%E7%89%88/">教你在安卓电视或盒子上用手柄玩GTA3周年纪念版</a></h1><div class="content" id="content1"><h2 id="游戏简介"><a href="#游戏简介" class="headerlink" title="游戏简介"></a>游戏简介</h2><p>广受好评的侠盗猎车手3周年纪念版登陆移动设备，让自由城黑暗肮脏的黑社会栩栩如生。侠盗猎车手3拥有庞大而多样的开放世界、各行各业的狂野角色以及随意探索的自由，将黑暗、迷人和无情的犯罪世界置于您的指尖。凭借出色的配音、黑暗的故事情节、令人惊叹的配乐和革命性的开放世界玩法，侠盗猎车手3定义了一代人开放世界的游戏类型。</p>
+<p><img src="/images/loading.gif" data-original="/images/gta3.jpg" alt=""></p>
+<h2 id="特色"><a href="#特色" class="headerlink" title="特色"></a>特色</h2><ul>
+<li>震撼的视觉更新</li>
+<li>高清画质</li>
+<li>针对触摸屏设备优化的游戏玩法</li>
+<li>移动平台的自定义控件</li>
+<li>无数小时的游戏</li>
+<li>支持游戏手柄和部分USB控制器</li>
+<li>使用新的视频显示设置定制您的视觉体验</li>
+</ul>
+<h2 id="支持的语言"><a href="#支持的语言" class="headerlink" title="支持的语言"></a>支持的语言</h2><p>英语、法语、意大利语、德语、西班牙语和日语。</p>
+<h2 id="如何安装"><a href="#如何安装" class="headerlink" title="如何安装"></a>如何安装</h2><ol>
+<li>将APK安装在您的设备上，不要打开App。</li>
+<li>将com.rockstargames.gta3文件夹复制到盒子android/obb文件夹下。</li>
+<li>打开App进入游戏。</li>
+</ol>
+<h2 id="求助"><a href="#求助" class="headerlink" title="求助"></a>求助</h2><p><a href="https://chenhao2020.github.io/images/shou.png">请我喝杯咖啡</a>，免费教你怎么下载。</p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2022-05-29T19:39:12.000Z" title="2022-05-29T19:39:12.000Z">2022-05-29</time><span class="level-item"><a class="link-muted" href="/categories/%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF/">科学技术</a></span><span class="level-item">2 分钟 读完 (大约 281 个字)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF/%E6%95%99%E4%BD%A0%E5%9C%A8%E5%AE%89%E5%8D%93%E7%94%B5%E8%A7%86%E6%88%96%E7%9B%92%E5%AD%90%E4%B8%8A%E7%94%A8%E6%89%8B%E6%9F%84%E7%8E%A9GTA%E8%87%AA%E7%94%B1%E5%9F%8E%E6%95%85%E4%BA%8B/">教你在安卓电视或盒子上用手柄玩GTA自由城故事</a></h1><div class="content" id="content1"><h2 id="游戏简介"><a href="#游戏简介" class="headerlink" title="游戏简介"></a>游戏简介</h2><p>托尼·西普里亚尼 (Toni Cipriani) 曾是莱昂内 (Leone) 家族值得信赖的家伙，因为杀死了一个黑手党，在躲藏一段时间后重新回到了自由城。现在，自由城的街道一片混乱，交战的家庭争夺控制权，在政治腐败、有组织犯罪、贩毒和工会罢工的浪潮下，该镇开始自毁。疯狂的杀手、道德败坏的大亨、愤世嫉俗的政客，甚至他自己的母亲都在阻碍托尼试图将这座城市置于莱昂内家族的控制之下。</p>
+<p><img src="/images/loading.gif" data-original="/images/gta-lcs.jpg" alt=""></p>
+<h2 id="特色"><a href="#特色" class="headerlink" title="特色"></a>特色</h2><ul>
+<li>新的高分辨率</li>
+<li>实时光照和阴影</li>
+<li>增强的绘制距离</li>
+<li>蓝牙和 USB 游戏手柄</li>
+</ul>
+<h2 id="如何安装"><a href="#如何安装" class="headerlink" title="如何安装"></a>如何安装</h2><ol>
+<li>将APK安装在您的设备上，不要打开App。</li>
+<li>将com.rockstargames.gtalcs文件夹复制到盒子android/obb文件夹下。</li>
+<li>打开App进入游戏。</li>
+</ol>
+<h2 id="游戏大小"><a href="#游戏大小" class="headerlink" title="游戏大小"></a>游戏大小</h2><p>2.2 GB</p>
+<h2 id="求助"><a href="#求助" class="headerlink" title="求助"></a>求助</h2><p><a href="https://chenhao2020.github.io/images/shou.png">请我喝杯咖啡</a>，免费教你怎么下载。</p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2022-05-29T18:39:11.000Z" title="2022-05-29T18:39:11.000Z">2022-05-29</time><span class="level-item"><a class="link-muted" href="/categories/%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF/">科学技术</a></span><span class="level-item">3 分钟 读完 (大约 426 个字)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF/%E6%95%99%E4%BD%A0%E5%9C%A8%E5%AE%89%E5%8D%93%E7%94%B5%E8%A7%86%E6%88%96%E7%9B%92%E5%AD%90%E4%B8%8A%E7%94%A8%E6%89%8B%E6%9F%84%E7%8E%A9GTA%20SA/">教你在安卓电视或盒子上用手柄玩GTA SA</a></h1><div class="content" id="content1"><h2 id="游戏简介"><a href="#游戏简介" class="headerlink" title="游戏简介"></a>游戏简介</h2><p>五年前，卡尔·约翰逊逃离了圣安地列斯洛圣都的生活压力。这座城市因帮派问题、毒品和腐败而四分五裂，电影明星和百万富翁尽最大努力避开黑帮。现在是90年代初，卡尔回家了。他的母亲被谋杀了，他的家庭已经分崩离析，他的儿时朋友都在走向灾难。在他到家附近时，几个腐败的警察以杀人罪诬陷他。卡尔被迫踏上了流窜整个圣安地列斯州的旅程，拯救家人，控制街道。</p>
+<p><img src="/images/loading.gif" data-original="/images/GTASA.jpg" alt=""></p>
+<p>Rockstar Games 将其最大的移动版本发布到移动设备上，其广阔的开放世界覆盖了圣安地列斯州及其三个主要城市——洛圣都、圣菲耶罗和拉斯文图拉斯—，具有增强的视觉保真度和超过70小时的游戏时间。</p>
+<h2 id="特色"><a href="#特色" class="headerlink" title="特色"></a>特色</h2><ul>
+<li>专为移动设备重新制作的高分辨率图形</li>
+<li>蓝牙和 USB 游戏手柄。</li>
+<li>通过可调整的图形设置定制您的视觉体验。</li>
+</ul>
+<h2 id="支持的语言"><a href="#支持的语言" class="headerlink" title="支持的语言"></a>支持的语言</h2><p>英语、法语、意大利语、德语、西班牙语、俄语和日语。</p>
+<h2 id="如何安装"><a href="#如何安装" class="headerlink" title="如何安装"></a>如何安装</h2><ol>
+<li>将APK安装在您的设备上，不要打开App。</li>
+<li>将com.rockstargames.gtasa文件夹复制到盒子android/obb文件夹下。</li>
+<li>打开App进入游戏。</li>
+</ol>
+<h2 id="安装包获取"><a href="#安装包获取" class="headerlink" title="安装包获取"></a>安装包获取</h2><p><a href="https://play.google.com/store/apps/details?id=com.rockstargames.gtasa">Google Play</a></p>
+<h2 id="求助"><a href="#求助" class="headerlink" title="求助"></a>求助</h2><p><a href="https://chenhao2020.github.io/images/shou.png">请我喝杯咖啡</a>，免费教你怎么下载。</p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2022-05-29T18:39:10.000Z" title="2022-05-29T18:39:10.000Z">2022-05-29</time><span class="level-item"><a class="link-muted" href="/categories/%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF/">科学技术</a></span><span class="level-item">2 分钟 读完 (大约 342 个字)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF/%E6%95%99%E4%BD%A0%E5%9C%A8%E5%AE%89%E5%8D%93%E7%94%B5%E8%A7%86%E6%88%96%E7%9B%92%E5%AD%90%E4%B8%8A%E7%94%A8%E6%89%8B%E6%9F%84%E7%8E%A9GTA%E7%BD%AA%E6%81%B6%E4%B9%8B%E5%9F%8E/">教你在安卓电视或盒子上用手柄玩GTA罪恶之城</a></h1><div class="content" id="content1"><h2 id="游戏简介"><a href="#游戏简介" class="headerlink" title="游戏简介"></a>游戏简介</h2><p>欢迎来到罪恶之城，欢迎回到80年代。罪恶之城是一个巨大的城市，从海滩到沼泽，从浮华的富人区到贫民窟，有史以来最多样化、最完整和最活跃的城市之一。将开放世界的游戏玩法与角色驱动的叙事相结合，将您带入一个充满欢乐和堕落的小镇，并有机会根据您的选择接管它。</p>
+<p><img src="/images/loading.gif" data-original="/images/gta-vicecity.jpg" alt=""></p>
+<h2 id="特色"><a href="#特色" class="headerlink" title="特色"></a>特色</h2><ul>
+<li>更新的图形、角色模型和灯光效果</li>
+<li>新的、精确定制的射击和瞄准选项</li>
+<li>具有无数小时游戏时间的大规模战役</li>
+<li>兼容 MoGa 无线控制器和部分 USB 游戏手柄</li>
+<li>沉浸式触觉效果</li>
+<li>通过可调节的图形设置定制您的视觉体验</li>
+</ul>
+<h2 id="支持的语言"><a href="#支持的语言" class="headerlink" title="支持的语言"></a>支持的语言</h2><p>英语、法语、意大利语、德语、西班牙语、韩语、俄语和日语。</p>
+<h2 id="如何安装"><a href="#如何安装" class="headerlink" title="如何安装"></a>如何安装</h2><ol>
+<li>将APK安装在您的设备上，不要打开App。</li>
+<li>将com.rockstargames.gtavc文件夹复制到盒子android/obb文件夹下。</li>
+<li>打开App进入游戏。</li>
+</ol>
+<h2 id="游戏大小"><a href="#游戏大小" class="headerlink" title="游戏大小"></a>游戏大小</h2><p>文件 Apk：7 MB<br>Obb（数据）：1.42 GB</p>
+<h2 id="求助"><a href="#求助" class="headerlink" title="求助"></a>求助</h2><p><a href="https://chenhao2020.github.io/images/shou.png">请我喝杯咖啡</a>，免费教你怎么下载。</p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2022-05-29T18:30:11.000Z" title="2022-05-29T18:30:11.000Z">2022-05-29</time><span class="level-item"><a class="link-muted" href="/categories/%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF/">科学技术</a></span><span class="level-item">2 分钟 读完 (大约 304 个字)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF/%E6%95%99%E4%BD%A0%E5%9C%A8%E5%AE%89%E5%8D%93%E7%94%B5%E8%A7%86%E6%88%96%E7%9B%92%E5%AD%90%E4%B8%8A%E7%94%A8%E6%89%8B%E6%9F%84%E7%8E%A9GTA%E5%94%90%E4%BA%BA%E8%A1%97%E5%A4%A7%E6%88%98/">教你在安卓电视或盒子上用手柄玩GTA唐人街大战</a></h1><div class="content" id="content1"><h2 id="游戏简介"><a href="#游戏简介" class="headerlink" title="游戏简介"></a>游戏简介</h2><p>在父亲被谋杀之后，李黄有一个简单的任务：将一把古老的剑交给他的叔叔肯尼，以确保家人继续控制自由城的三合会帮派。李黄是一个被宠坏的富家子弟，希望一切顺利，但他的旅行并没有按计划进行。在被抢劫和接近其死亡时，他将在世界上最危险和道德破产的城市中寻找荣誉、财富和复仇。</p>
+<p><img src="/images/loading.gif" data-original="/images/gta-chinatown.jpg" alt=""></p>
+<h2 id="特色"><a href="#特色" class="headerlink" title="特色"></a>特色</h2><ul>
+<li>史诗般的故事情节，包含大量支线任务、令人上瘾</li>
+<li>宽屏分辨率支持</li>
+<li>支持 Android TV 设备</li>
+<li>增强的图形、照明和爆炸效果</li>
+<li>兼容部分 Android 蓝牙和 USB 控制器</li>
+</ul>
+<h2 id="支持的语言"><a href="#支持的语言" class="headerlink" title="支持的语言"></a>支持的语言</h2><p>英语、法语、意大利语、德语、西班牙语、俄语和日语。</p>
+<h2 id="如何安装"><a href="#如何安装" class="headerlink" title="如何安装"></a>如何安装</h2><ol>
+<li>将APK安装在您的设备上，不要打开App。</li>
+<li>将com.rockstargames.gtasa文件夹复制到盒子android/obb文件夹下。</li>
+<li>打开App进入游戏。</li>
+</ol>
+<h2 id="求助"><a href="#求助" class="headerlink" title="求助"></a>求助</h2><p><a href="https://chenhao2020.github.io/images/shou.png">请我喝杯咖啡</a>，免费教你怎么下载。</p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2022-05-21T18:39:11.000Z" title="2022-05-21T18:39:11.000Z">2022-05-21</time><span class="level-item"><a class="link-muted" href="/categories/%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF/">科学技术</a></span><span class="level-item">3 分钟 读完 (大约 417 个字)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF/%E5%B0%8F%E7%B1%B3%E7%9B%92%E5%AD%903%E5%88%B7%E5%AE%89%E5%8D%93TV%E5%8E%9F%E7%94%9FATV-V3%E7%89%88/">小米盒子3刷安卓TV原生ATV-V3版</a></h1><div class="content" id="content1"><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>今年4月份给小米盒子3刷的越南小哥制作的原生版安卓TV有许多Bug，于是找到也作者的帖子发现系统已经更新到了V3版，于是下载下来给盒子重新进行了刷机，这两天用下来体验非常的不错。</p>
+<p><strong>投屏</strong></p>
+<ul>
+<li>MiraCast 工作正常。</li>
+<li>AirPlay 工作正常。</li>
+<li>YoutubeCast：已经正常工作。</li>
+</ul>
+<p><strong>语音搜索</strong></p>
+<p>使用 Android TV Remote Control 应用程序通过手机进行语音搜索。</p>
+<p><strong>其他特点</strong></p>
+<ul>
+<li>修复 Youtube / Play 商店搜索中的文本输入错误</li>
+<li>修复 HDMI-CEC 错误。</li>
+<li>修复了访问 SMB 设备时的错误。</li>
+<li>修复了无法连接MiTV助手的问题。</li>
+<li>修复小米控制软件无法通过Wifi控制小米盒子的问题。</li>
+<li>增加智能家居应用，管理小米设备更方便。</li>
+<li>增加 LeanKey 键盘，支持使用鼠标时的文本输入。</li>
+</ul>
+<h2 id="前提条件"><a href="#前提条件" class="headerlink" title="前提条件"></a>前提条件</h2><ul>
+<li>已下载ATV-V3_MDZ-16-AA_VoiceSearch.rar</li>
+<li>小米盒子原生系统以成功降级到1.4.32</li>
+<li>盒子型号必须为MDZ-16-AA</li>
+</ul>
+<h2 id="操作步骤"><a href="#操作步骤" class="headerlink" title="操作步骤"></a>操作步骤</h2><p><strong>步骤1 ：安装 TWRP Recovery。</strong></p>
+<p>请参考上篇文章《2022年给吃灰的小米盒子3刷上安卓TV原生版》</p>
+<p><strong>步骤2 ：通过 TWRP 安装 ROM</strong></p>
+<ol>
+<li>将.zip格式的ROM文件复制到复制到 USB。</li>
+<li>将小米盒子重启进入TWRP Recovery 模式，然后点“install” 安装刚才复制的.zip格式的ROM文件。</li>
+<li>ROM加载过程需要几分钟，然后小米盒子会自动重启，几分钟进入全新的ATV 系统！</li>
+</ol>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2022-05-14T18:39:11.000Z" title="2022-05-14T18:39:11.000Z">2022-05-14</time><span class="level-item"><a class="link-muted" href="/categories/%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF/">科学技术</a></span><span class="level-item">6 分钟 读完 (大约 934 个字)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF/2022%E5%B9%B4%E7%BB%99%E5%90%83%E7%81%B0%E7%9A%84%E5%B0%8F%E7%B1%B3%E7%9B%92%E5%AD%903%E5%88%B7%E4%B8%8A%E5%AE%89%E5%8D%93TV%E5%8E%9F%E7%94%9F%E7%89%88/">2022年给吃灰的小米盒子3刷上安卓TV原生版</a></h1><div class="content" id="content1"><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>五一回了趟老家，想在电视上看会儿油管之视频。于是翻出了好久都没用的2015年买的小米盒子3。电源已经找不到了，于是在拼多多花10多块钱买了只非原装电源适配器，盒子算是成功启动了。由于小米盒子无法在后台运行应用，装好的机场就无法正常使用，所以只能换操作系统。PS：路由器出国可以不用装机场。</p>
+<p>于是网上找到了相应的教程和越南小哥制作的镜像文件。由于网上那些文档时代久远，花了近一天的时间，踩过无数坑后终于在2022年让吃灰的小米盒子3用上安卓TV原生版。</p>
+<h2 id="盒子参数"><a href="#盒子参数" class="headerlink" title="盒子参数"></a>盒子参数</h2><p>注意型号为MDZ-16-AA。<br>其他参数如下图所示。</p>
+<p><img src="/images/loading.gif" data-original="/images/%E7%9B%92%E5%AD%90%E5%8F%82%E6%95%B0.png" alt="盒子参数"></p>
+<h2 id="操作步骤"><a href="#操作步骤" class="headerlink" title="操作步骤"></a>操作步骤</h2><p><strong>步骤1：将盒子降级至精简版</strong></p>
+<ol>
+<li>将U盘格式化为NTFS/FAT32格式。</li>
+<li>下载1.3.106刷机包并解压。</li>
+<li>将解压后得到update.zip和xiaomi_update两个文件放入U盘根目录并插入盒子。</li>
+<li>按住遥控器Home键和设置断开遥控器后，给盒子断电。</li>
+<li>按住遥控器确认和返回键后立即上电。</li>
+<li>出现正在载入数据界面再放掉确认和返回键。</li>
+</ol>
+<p><strong>步骤2：禁止制动升级</strong></p>
+<p>小米盒子在联网的情况下会自动检测是否有可用的更新并自动升级至最新版本的系统。在未删掉小米盒子系统内的update.apk文件前，需要进入盒子的网络设置，在无线网络下，找到DNS功能后，关闭自动配置功能，DNS栏目输入182.92.190.89 后提交，接着重启盒子即可屏蔽小米盒子自动升级。</p>
+<p><strong>步骤3：安装ATV</strong></p>
+<ol>
+<li><p>将小米盒子系统降级到1.3.106或1.3.106.386-1.4.15.814版。</p>
+</li>
+<li><p>使用刷机精灵给盒子进行root。</p>
+</li>
+<li><p>将盒子使用双公USB线与电脑连接，并安装ADB驱动，保证电脑可识别小米盒子。</p>
+</li>
+<li><p>在进入TWRP-RECOVERY文件夹下打开终端，输入如下命令。</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">adb root</span><br><span class="line">adb push twrp-mdz-16-aa.img &#x2F;sdcard&#x2F;twrp-mdz-16-aa.img</span><br><span class="line">adb shell dd if&#x3D;&#x2F;sdcard&#x2F;twrp-mdz-16-aa.img of&#x3D;&#x2F;dev&#x2F;block&#x2F;recovery</span><br><span class="line">adb shell su -c mount -o rw,remount &#x2F;system</span><br><span class="line">adb remount</span><br><span class="line">adb shell mv &#x2F;system&#x2F;recovery-from-boot.p &#x2F;system&#x2F;recovery-from-boot.p.bak</span><br><span class="line">adb reboot recovery</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>双击“install-recovery.bat”文件，等待批处理运行，窗口完成后会自动关闭，此时盒子已经能进入到Recovery Mode。</p>
+</li>
+<li><p>将TWRP文件夹放到U盘根目录。</p>
+</li>
+<li><p>在U盘中，进入TWRP/BACKUPS目录，将目录11608V181887976重命名为你的小米盒子3的序列号S/N，斜杠用大写V代替。</p>
+</li>
+<li><p>U盘与鼠标通过USB集线器连接到小米盒子。</p>
+</li>
+<li><p>屏幕上用鼠标选择Restore，然后选择Select Storage &gt; USB OTG。确保所有选项都已选中，最后按住右下角箭头图标向后滑动即可刷入。</p>
+</li>
+<li><p>点击Home返回Recovery主界面点击wipe。</p>
+</li>
+<li><p>完成后点击Reboot，小米盒子3重启到Android TV。</p>
+</li>
+</ol>
+<p><strong>步骤4：卸载不需要的应用</strong></p>
+<p>盒子内置也许多预装应用，而且不可以卸载。使用开心助手可成功将其卸载掉。</p>
+<p><img src="/images/loading.gif" data-original="/images/%E5%BA%94%E7%94%A8%E7%B2%BE%E7%AE%80.png" alt="应用精简"></p>
+<ol>
+<li>输入电视盒子IP地址。</li>
+<li>点击连接</li>
+<li>点击ADB Root</li>
+<li>断开连接</li>
+<li>重新点击连接</li>
+<li>查看是否已经Root</li>
+<li>点击进入应用管理</li>
+</ol>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2022-04-27T18:39:11.000Z" title="2022-04-27T18:39:11.000Z">2022-04-27</time><span class="level-item"><a class="link-muted" href="/categories/%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF/">科学技术</a></span><span class="level-item">2 分钟 读完 (大约 257 个字)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF/4G%E5%86%85%E5%AD%98%E8%80%81%E6%97%A7%E7%94%B5%E8%84%91%E5%AE%89%E8%A3%85Windows%2011%20lite/">4Gb内存老旧电脑安装Windows11 lite</a></h1><div class="content" id="content1"><p>最近在某鱼上花1千块淘到一款nec的只有700多克重量的超薄夏普2k屏ssd笔记本，外观甚是满意，但内存只有4g大小，心想要在这样内存的电脑上安装上微软正式版windows11操作系统就完美至极了。</p>
+<p><img src="/images/loading.gif" data-original="/images/vk22.jpg" alt="vk22-1"></p>
+<p>大家都知道windows11正式版对老旧电脑非常不友好，要么吃内存，要么对安装有所限制，只有win10 ltsc方案能在这样的老电脑体验非常流畅地运行。最近在逛油管时发现国外有一款大神制作的非常纯净的精简版windows11 lite镜像可完美运行在4g大小内存的老旧电脑上，经过一番折腾，我的vk22已经完美流畅的用上了windows11，感觉真是跟捡到宝贝一样。</p>
+<p>这款系统已经跳过微软安装限制，并且已经激活。</p>
+<p><img src="/images/loading.gif" data-original="/images/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20220427211911.png" alt="vk22-2"></p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2021-09-17T18:39:11.000Z" title="2021-09-17T18:39:11.000Z">2021-09-17</time><span class="level-item"><a class="link-muted" href="/categories/%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF/">科学技术</a></span><span class="level-item">13 分钟 读完 (大约 1994 个字)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF/%E4%BB%80%E4%B9%88%E6%98%AF%20ACME%20%E5%8D%8F%E8%AE%AE/">什么是 ACME 协议，它是如何工作的？</a></h1><div class="content" id="content1"><p>本文解释了ACME协议的工作原理，它对现代公钥基础设施 (PKI) 和证书管理部署的重要性，以及它如何帮助组织实现自动化。</p>
+<h2 id="什么是-ACME？"><a href="#什么是-ACME？" class="headerlink" title="什么是 ACME？"></a>什么是 ACME？</h2><p>ACME，即自动自动证书管理环境（Automatic Certificate Management Environment），是一种协议，用于自动颁发和更新证书，无需人工干预。</p>
+<p>互联网安全研究小组 (ISRG) 最初为自己的证书服务设计了ACME协议。证书颁发机构Let’s Encrypt通过ACME协议免费提供DV证书。如今，各种其他的CA、PKI供应商和浏览器都支持ACME协议，支持不同类型的证书。</p>
+<h2 id="ACME的版本"><a href="#ACME的版本" class="headerlink" title="ACME的版本"></a>ACME的版本</h2><p>ACME协议的第一代ACMEv1于2016年发布，最初仅支持为一个域名颁发证书。2018年更新后的ACMEv2支持颁发通配符证书。同时也在安全方面进行了改进，以更好地验证域名所有权并防止恶意行为者通过ACME协议获得证书。</p>
+<p>2019年，IETF在RFC8555中标准化了ACME协议。此后许多客户端都开始对该协议的支持。<strong>ACMEv2不能够向下兼容</strong>，所以ACMEv1将在2021年6月完全弃用。</p>
+<h2 id="ACME协议是如何工作的呢？"><a href="#ACME协议是如何工作的呢？" class="headerlink" title="ACME协议是如何工作的呢？"></a>ACME协议是如何工作的呢？</h2><p>通过ACME协议，公司或个人站长可以简化或自动化证书管理的流程，如证书签名请求 (CSR)的生成、域名所有权的验证以及证书的颁发和安装。</p>
+<p>ACME协议主要用于获取DV证书，因为DV证书不需要更高级验证。仅验证域名是否存在，无需人工干预。</p>
+<p><strong>该协议还可用于获取更高级的证书，如OV和EV证书。但是需要额外的支持机制以及ACME客户端。</strong></p>
+<p>ACME协议的目标是自动设置HTTPS服务器并提供受信任的证书以消除任何容易出错的手动事务。要使用该协议，您需要一个ACME客户端和ACME服务端，它们通过HTTPS连接与JSON消息进行通信的。</p>
+<ul>
+<li>客户端可在任何需要SSL/TLS证书的服务器或设备上运行。它用于请求证书管理操作，例如颁发或撤销。</li>
+<li>服务端由证书颁发机构 (CA) 运行，如Let’s Encrypt，响应客户端的请求。</li>
+</ul>
+<p>市面上有多种不同的ACME客户端。Let’s Encrypt建议使用certbot客户端，它易于使用，适用于许多操作系统，并且有完整文档支持。其它流行的 ACME客户端可在GitHub上找到，如ACMESharp、acme-client、GetSSL等。</p>
+<h2 id="设置ACME客户端"><a href="#设置ACME客户端" class="headerlink" title="设置ACME客户端"></a>设置ACME客户端</h2><p>选择一款ACME客户端后，下一步是要将其安装在需要部署证书的服务器上。ACME客户端几乎可以在任何编程语言和环境中运行，设置过程只需5个简单的步骤：</p>
+<ol>
+<li>客户端提示输入要管理的域名。</li>
+<li>客户端提供支持ACME协议的CA列表。</li>
+<li>客户端联系选定的CA并生成授权密钥对。</li>
+<li><strong>CA向客户端发出DNS或HTTPS质询，以证明其对域名的所有权。</strong></li>
+<li>CA发送一个随机数，供客户端使用其私钥签名以证明密钥对的所有权。</li>
+</ol>
+<p><img src="/images/loading.gif" data-original="/images/ACME1.png" alt="ACME客户端初始配置过程"></p>
+<p>一旦CA验证客户端是真实的，ACME客户端就准备好代表域名进行证书管理请求。</p>
+<h2 id="使用ACME部署和管理证书"><a href="#使用ACME部署和管理证书" class="headerlink" title="使用ACME部署和管理证书"></a>使用ACME部署和管理证书</h2><p>使用ACME协议颁发或更新证书很简单，客户端只需发送证书管理请求并使用授权密钥对对其进行签名。</p>
+<ul>
+<li><p>颁发/续订：安装了ACME客户端的服务器生成CSR并将其发送给CA，然后CA颁发证书。</p>
+</li>
+<li><p>签发/更新（过程类似）：</p>
+<ul>
+<li>ACME客户端向CA发送CSR，请求使用指定的公钥为授权域颁发证书。</li>
+<li>CSR使用相应的私钥和域名授权密钥。</li>
+<li><strong>当CA收到请求时，它会验证两个签名，使用来自CSR的公钥为域名颁发证书，并将其返回给客户端。</strong></li>
+</ul>
+</li>
+</ul>
+<p><img src="/images/loading.gif" data-original="/images/ACME2.png" alt="证书颁发/更新"></p>
+<ul>
+<li>撤销：为了撤销证书，ACME客户端使用域名授权密钥对证书进行撤销请求，CA验证请求后通过CRL或OCSP发布吊销信息，以防止接受吊销的证书。</li>
+</ul>
+<p><img src="/images/loading.gif" data-original="/images/ACME3.png" alt="ACME协议证书撤销"></p>
+<h2 id="ACME是如何被使用的？"><a href="#ACME是如何被使用的？" class="headerlink" title="ACME是如何被使用的？"></a>ACME是如何被使用的？</h2><p>在2021年的机器身份管理状况报告（State of Machine Identity Management Report）中，40%的受访者透露，他们仍在使用电子表格手动跟踪证书。平均而言，两年内经历了大约3次因证书过期或配置错误而导致的意外中断。</p>
+<p>尽管越来越多地使用现代、敏捷的计算机环境，但许多企业继续使用过时的技术来部署和管理证书，这些技术已不足以满足当今快节奏环境日益增长的需求。在电子表格或数据库中手动管理证书会导致效率低下或因人为错误而导致业务中断或不合规的风险。</p>
+<p>这正是ACME协议强调的：“现有的Web PKI证书颁发机构倾向于使用一组临时协议来进行证书颁发和身份验证。这些临时程序是通过让用户遵循来自CA 的交互式指令而不是通过机器。”</p>
+<h2 id="使用ACME自动化管理证书"><a href="#使用ACME自动化管理证书" class="headerlink" title="使用ACME自动化管理证书"></a>使用ACME自动化管理证书</h2><p>TLS服务器证书用于保护应用程序和数据，这种扩展的使用增加了中断的可能性，因为有更多的证书需要跟踪，每个业务应用程序有更多的证书可能会影响运营。使用手动方法或电子表格方式对证书的请求、续订和供应需要数小时或数天。除了耗时，还容易出错，甚至会导致服务中断。</p>
+<p>ACME使IT管理员能够以自动化的方式向CA证明他们对域名的控制权、颁发受信任的证书并跟踪证书到期时间。此外，还可以在需要的时侯自动更新或撤销证书。</p>
+<p>ACME将自动化带入复杂的PKI部署中。如ACME协议文档所述，ACME提供了一个“用于自动化颁发和域验证程序的可扩展框架，从而允许服务器和基础设施软件无需用户交互即可获取证书。使用该协议应该会从根本上简化 HTTPS的部署以及基于PKIX的其它基于TLS协议的身份验证的实用性。”</p>
+<h2 id="CA敏捷（agility）的重要性"><a href="#CA敏捷（agility）的重要性" class="headerlink" title="CA敏捷（agility）的重要性"></a>CA敏捷（agility）的重要性</h2><p>CA敏捷性是添加/删除或从一个CA切换到另一个CA的能力。避免对单个CA产生大量依赖是行业的最佳实践。我们应该能够在零业务影响的情况下，在需要时透明地切换CA。</p>
+<p>如果一个组织被锁定在一个CA中并且他们发生了一些事情，如服务中断。那么，能够切换到备用CA是便是最佳实践。</p>
+<p>ACME使选择备用CA的过程变得简单明。目前有很多CA支持ACME协议，在配置阶段只需点击几下鼠标即可选择一个。</p>
+<p>陈昊 编译</p>
+</div></article></div></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="" src="/images/loading.gif" data-original="/images/wx.png" alt="安陵少年"></figure><p class="title is-size-4 is-block line-height-inherit">安陵少年</p><p class="is-size-6 is-block">“哪个书生万户侯”</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Xian, China</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives"><p class="title">18</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories"><p class="title">5</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags"><p class="title">10</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="/about" target="_blank" rel="noopener">关注我</a></div><div class="level is-mobile"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/chenhao2020/"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Tieba" href="https://tieba.baidu.com/f?kw=%E5%88%9B%E6%84%8F%E5%86%99%E4%BD%9C&amp;ie=utf-8"><i class="fas fa-map-marker-alt"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Douban" href="https://site.douban.com/138914/"><i class="fab fa-dribbble"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="/atom.xml"><i class="fas fa-rss"></i></a></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">链接</h3><ul class="menu-list"><li><a class="level is-mobile is-mobile" href="https://site.douban.com/138914/" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">豆瓣创意写作社</span></span><span class="level-right"><span class="level-item tag">site.douban.com</span></span></a></li><li><a class="level is-mobile is-mobile" href="https://github.com/chenhao2020/chenhao2020.github.io" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Github</span></span><span class="level-right"><span class="level-item tag">github.com</span></span></a></li><li><a class="level is-mobile is-mobile" href="https://dev.azure.com/chenhao2020/docs-engineer" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">后台网址</span></span><span class="level-right"><span class="level-item tag">dev.azure.com</span></span></a></li><li><a class="level is-mobile is-mobile" href="https://tieba.baidu.com/f?ie=utf-8&amp;kw=%E5%88%9B%E6%84%8F%E5%86%99%E4%BD%9C" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">创意写作吧</span></span><span class="level-right"><span class="level-item tag">tieba.baidu.com</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">分类</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/categories/%E5%88%9B%E6%84%8F%E5%86%99%E4%BD%9C/"><span class="level-start"><span class="level-item">创意写作</span></span><span class="level-end"><span class="level-item tag">6</span></span></a><ul class="mr-0"><li><a class="level is-mobile is-marginless" href="/categories/%E5%88%9B%E6%84%8F%E5%86%99%E4%BD%9C/%E5%86%99%E4%BD%9C%E6%8A%80%E5%B7%A7/"><span class="level-start"><span class="level-item">写作技巧</span></span><span class="level-end"><span class="level-item tag">6</span></span></a></li></ul></li><li><a class="level is-mobile is-marginless" href="/categories/%E5%8E%86%E5%8F%B2%E5%AD%A6/"><span class="level-start"><span class="level-item">历史学</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86/"><span class="level-start"><span class="level-item">知识管理</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF/"><span class="level-start"><span class="level-item">科学技术</span></span><span class="level-end"><span class="level-item tag">10</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">归档</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/archives/2023/01/"><span class="level-start"><span class="level-item">一月 2023</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2022/05/"><span class="level-start"><span class="level-item">五月 2022</span></span><span class="level-end"><span class="level-item tag">7</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2022/04/"><span class="level-start"><span class="level-item">四月 2022</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2022/03/"><span class="level-start"><span class="level-item">三月 2022</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2021/09/"><span class="level-start"><span class="level-item">九月 2021</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/05/"><span class="level-start"><span class="level-item">五月 2020</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/04/"><span class="level-start"><span class="level-item">四月 2020</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">订阅更新</h3><form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open(&#039;https://feedburner.google.com/fb/a/mailverify?uri=creativewriting/VeXV&#039;,&#039;popupwindow&#039;,&#039;scrollbars=yes,width=550,height=520&#039;);return true"><input type="hidden" value="creativewriting/VeXV" name="uri"><input type="hidden" name="loc" value="en_US"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button is-primary" type="submit" value="订阅"></div></div><p class="help">邮箱也可以订阅奥</p></form></div></div></div><div class="column-right-shadow is-hidden-widescreen"></div></div><div class="column column-right is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only order-3"><div class="card widget"><div class="card-content"><h3 class="menu-label">最新文章</h3><article class="media"><div class="media-content size-small"><p><time dateTime="2023-01-16T18:39:11.000Z">2023-01-16</time></p><p class="title is-6"><a class="link-muted" href="/%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF/%E7%94%A8%E6%A0%91%E8%8E%93%E6%B4%BE%E7%BB%99%E8%80%81%E6%97%A7%E6%B1%BD%E8%BD%A6%E5%81%9A%E4%B8%AA%E5%89%AF%E5%B1%8F%E4%B8%80/">用树莓派给老旧汽车做个副屏（一）</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF/">科学技术</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2022-05-29T20:39:11.000Z">2022-05-29</time></p><p class="title is-6"><a class="link-muted" href="/%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF/%E6%95%99%E4%BD%A0%E5%9C%A8%E5%AE%89%E5%8D%93%E7%94%B5%E8%A7%86%E6%88%96%E7%9B%92%E5%AD%90%E4%B8%8A%E7%94%A8%E6%89%8B%E6%9F%84%E7%8E%A9GTA3%E5%91%A8%E5%B9%B4%E7%BA%AA%E5%BF%B5%E7%89%88/">教你在安卓电视或盒子上用手柄玩GTA3周年纪念版</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF/">科学技术</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2022-05-29T19:39:12.000Z">2022-05-29</time></p><p class="title is-6"><a class="link-muted" href="/%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF/%E6%95%99%E4%BD%A0%E5%9C%A8%E5%AE%89%E5%8D%93%E7%94%B5%E8%A7%86%E6%88%96%E7%9B%92%E5%AD%90%E4%B8%8A%E7%94%A8%E6%89%8B%E6%9F%84%E7%8E%A9GTA%E8%87%AA%E7%94%B1%E5%9F%8E%E6%95%85%E4%BA%8B/">教你在安卓电视或盒子上用手柄玩GTA自由城故事</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF/">科学技术</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2022-05-29T18:39:11.000Z">2022-05-29</time></p><p class="title is-6"><a class="link-muted" href="/%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF/%E6%95%99%E4%BD%A0%E5%9C%A8%E5%AE%89%E5%8D%93%E7%94%B5%E8%A7%86%E6%88%96%E7%9B%92%E5%AD%90%E4%B8%8A%E7%94%A8%E6%89%8B%E6%9F%84%E7%8E%A9GTA%20SA/">教你在安卓电视或盒子上用手柄玩GTA SA</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF/">科学技术</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2022-05-29T18:39:10.000Z">2022-05-29</time></p><p class="title is-6"><a class="link-muted" href="/%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF/%E6%95%99%E4%BD%A0%E5%9C%A8%E5%AE%89%E5%8D%93%E7%94%B5%E8%A7%86%E6%88%96%E7%9B%92%E5%AD%90%E4%B8%8A%E7%94%A8%E6%89%8B%E6%9F%84%E7%8E%A9GTA%E7%BD%AA%E6%81%B6%E4%B9%8B%E5%9F%8E/">教你在安卓电视或盒子上用手柄玩GTA罪恶之城</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF/">科学技术</a></p></div></article></div></div><!--!--><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">标签</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/ACME/"><span class="tag">ACME</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/VK22/"><span class="tag">VK22</span><span class="tag is-grey-lightest">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E4%B8%BB%E9%A2%98/"><span class="tag">主题</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%8E%86%E5%8F%B2%E5%AD%A6/"><span class="tag">历史学</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%9B%BE%E4%B9%A6/"><span class="tag">图书</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%B0%8F%E7%B1%B3%E7%9B%92%E5%AD%90/"><span class="tag">小米盒子</span><span class="tag is-grey-lightest">6</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%B0%8F%E7%B1%B3%E7%9B%92%E5%AD%903/"><span class="tag">小米盒子3</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%83%85%E8%8A%82%E5%A4%A7%E7%BA%B2/"><span class="tag">情节大纲</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%95%85%E4%BA%8B%E5%88%9B%E6%84%8F/"><span class="tag">故事创意</span><span class="tag is-grey-lightest">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86/"><span class="tag">知识管理</span><span class="tag is-grey-lightest">1</span></a></div></div></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">出品</h3><ul class="menu-list"><center><a href="https://chenhao2020.github.io/%E5%88%9B%E6%84%8F%E5%86%99%E4%BD%9C/%E5%86%99%E4%BD%9C%E6%8A%80%E5%B7%A7/%E6%92%B0%E5%86%99%E7%AC%AC%E4%B8%80%E6%9C%AC%E5%B0%8F%E8%AF%B4/" target="_blank"><img src="/images/loading.gif" data-original="/images/book2.png"></a></center></ul></div></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><p class="size-small"><span>&copy; 2023 安陵少年</span>  Powered by <a href="https://coding.net" target="_blank" rel="noopener">Coding</a> &amp; <a href="https://github.com/" target="_blank" rel="noopener">Github</a> &amp; <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a> &amp; <a href="https://dev.azure.com/" target="_blank" rel="noopener">Azure Devops</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/chenhao2020/"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdnjs.loli.net/ajax/libs/jquery/3.3.1/jquery.min.js"></script><script src="https://cdnjs.loli.net/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            site: {
+                url: 'https://chenhao2020.github.io',
+                external_link: {"enable":true,"exclude":[]}
+            },
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="https://cdnjs.loli.net/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" defer></script><script src="/js/animation.js"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({
+            'HTML-CSS': {
+                matchFontHeight: false
+            },
+            SVG: {
+                matchFontHeight: false
+            },
+            CommonHTML: {
+                matchFontHeight: false
+            },
+            tex2jax: {
+                inlineMath: [
+                    ['$','$'],
+                    ['\\(','\\)']
+                ]
+            }
+        });</script><script src="https://cdnjs.loli.net/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" defer></script><!--!--><!--!--><!--!--><!--!--><script src="https://cdnjs.loli.net/ajax/libs/lightgallery/1.6.8/js/lightgallery.min.js" defer></script><script src="https://cdnjs.loli.net/ajax/libs/justifiedGallery/3.7.0/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><script src="/js/readmore.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618},"display":{"superSample":2,"width":150,"height":300,"position":"right","hOffset":0,"vOffset":-20},"mobile":{"show":true,"scale":0.5},"react":{"opacityDefault":0.7,"opacityOnHover":0.2},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script>
+        <style>
+            [bg-lazy] {
+                background-image: none !important;
+                background-color: #eee !important;
+            }
+        </style>
+        <script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                preloadRatio: 1,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(r){r.imageLazyLoadSetting.processImages=t;var e=r.imageLazyLoadSetting.isSPA,n=r.imageLazyLoadSetting.preloadRatio||1,c=a();function a(){var t=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")),e=Array.prototype.slice.call(document.querySelectorAll("[bg-lazy]"));return t.concat(e)}function t(){e&&(c=a());for(var t,o=0;o<c.length;o++)0<=(t=(t=c[o]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(r.innerHeight*n||document.documentElement.clientHeight*n)&&function(){var t,e,n,a,i=c[o];e=function(){c=c.filter(function(t){return i!==t}),r.imageLazyLoadSetting.onImageLoaded&&r.imageLazyLoadSetting.onImageLoaded(i)},(t=i).hasAttribute("bg-lazy")?(t.removeAttribute("bg-lazy"),e&&e()):(n=new Image,a=t.getAttribute("data-original"),n.onload=function(){t.src=a,t.removeAttribute("data-original"),e&&e()},t.src!==a&&(n.src=a))}()}function i(){clearTimeout(t.tId),t.tId=setTimeout(t,500)}t(),document.addEventListener("scroll",i),r.addEventListener("resize",i),r.addEventListener("orientationchange",i)}(this);</script></body></html>
